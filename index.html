@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <header class="header">
+        <section class="nav-section">
+            <nav class="navbar">
+                <a href="#" class="nav-logo">YR</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#my-projects-section" class="nav-link">Mes projets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact-title" class="nav-link">Me contacter</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+
+            <div class="name-container">
+                <p></p>
+                <h1 class="presentation-text">Yann Raulet</h1>
+                <h2 class="presentation-text">Développeur <br>web junior</h2>
+                <a class="button-to-projects-section" href="#my-projects-section">Mes projets</a>
+                <a class="button-to-contact-section" href="#contact-title">Me contacter</a>
+            </div>
+        </section>
+    </header>
+
+    <section class="about-section">
+        <h2 class="section-description">Qui suis-je ?</h2>
+        <hr class="about-section-hr">
+        <p class="picture-background"></p>
+        <p class="description-text"><span>Bienvenue sur mon portfolio !!</span></p>
+        <p class="description-text">Je m'appelle Yann Raulet et je suis ravi de votre visite. En reconversion professionnelle depuis septembre 2020 après une expérience enrichissante tant sur le plan professionnel que sur le plan humain dans le domaine du commerce,
+            je savais qu'il était temps pour moi de voguer vers de nouveaux horizons. Après une période de reflexion puis la réalisation d'un dossier de Transition Professionnelle, j'ai finalement suivi une formation
+            à la Wild Code School de Tours afin de devenir <br><span>développeur web back-end ( PHP / Symfony)</span>.</p>
+        <p class="description-text"> La formation n'a pas été de tout repos, il y a eu des hauts et des bas, mais redoublant d'efforts, je n'ai pas laché.
+            Je n'avais que des bases (HTML / CSS) avant d'intégrer cette formations, mais découvrir et apprendre ont toujours été de véritable moteurs pour moi, ce que le développement web offre sans commune mesure.
+            Ayant abordé rapidement le JavaScript durant cette période, je tache de combler ce manque en me formant dessus afin d'élargir mes connaissances du "front-end". 
+        </p>
+        <p class="description-text">En dehors de mon apprentissage dans le domaine du développemet web, j'aime le cinéma, la musique, la littérature et le sport, cela a construit celui que je suis aujourd'hui et nourrit ma curiosité chaque jour passant.
+            <br>"Quid mento sid acto", ça ne veut rien dire, mais je trouvais que ça clôturait bien !!
+        </p>
+
+        <div class="hobbies-icons-first-container">
+            <p class="hobbies-icons"><img src="images/ciné.jpg" alt="image cinéma"></p>
+            <p class="hobbies-icons"><img src="images/vinyle.jpg" alt="image platine vinyle"></p>
+        </div>
+        <div class="hobbies-icons-second-container">
+            <p class="hobbies-icons"><img src="images/book.jpg" alt="image livres"></p>
+            <p class="hobbies-icons"><img src="images/sport.jpg" alt="image sport"></p>
+        </div>
+    </section>
+
+    <section class="projects-section">
+        <article>
+            <h2 id="my-projects-section">Mes projets</h2>
+            <hr class="my-projects-section-hr">
+            <div class="description-projects">
+                <p>Vous retrouverez dans cette section les différents projets sur lesquels j'ai été enmené à travailler.<br>Que ce soit des projets en équipe ou en solo.</p>
+                <p>Vous pouvez cliquer sur les images pour accéder aux différents projets.</p>
+                <p>Les icônes utilisées sont issues du site <a href="https://www.flaticon.com/fr/" title="Flaticon">flaticon.com</a> (conçues par <a href="https://www.flaticon.com/fr/auteurs/pixel-perfect" title="Pixel perfect">Pixel perfect</a>
+                et <a href="https://www.freepik.com" title="Freepik">Freepik)</a> et sur <a href="https://icons8.com/">Icons8.fr</a></p>
+            </div>   
+        </article>
+
+        <article class="section-scroll">
+            <div class="grid-picture-container">
+                <a href="https://musictionary.go.yj.fr/public/" target="_blank"><img class="picture-size" src="images/musictionary.png" alt="lien site musictionary"></a>
+                <div>
+                    <h3 class="reveal reveal-title">Projet 1 : Musictionary</h3>
+                    <hr class="reveal reveal-hr">
+                    <p class="reveal reveal-text">MUSICTIONARY est un dictionnaire qui retrace les grands genres musicaux ainsi que des sous genres classés en catégories.
+                    <p class="reveal reveal-text"><span>Plusieurs catégories musicales pourront être ajoutées par la suite afin d’étoffer d’avantage le site.</span></p>
+                    <p class="reveal reveal-text">
+                        <img class="icon-picture" src="images/html.png" alt="icône html"><img class="icon-picture" src="images/css.png" alt="icône css"><img class="icon-picture" src="images/js.png" alt="icône js">
+                        <img class="icon-picture" src="images/php.png" alt="icône php">
+                    </p>
+                </div>
+            </div>
+        </article>
+
+        <article class="section-scroll">
+            <div class="grid-picture-container">
+                <img class="picture-size" src="images/mybook.png" alt="lien site mybook">
+                <div>
+                    <h3 class="reveal reveal-title">Projet 2 : Mybook</h3>
+                    <hr class="reveal reveal-hr">   
+                    <p class="reveal reveal-text">My books est un site permettant d'afficher et de gérer sa bibliothèque, par 
+                        l'ajout, la suppression, la modification des informations sur les livres.
+                        <br>La possibilité de rechercher par titre / auteur / genre / date de parution ...
+                    </p>
+                    <p class="reveal reveal-text"><span>Première utilisation de Composer et de Twig.</span></p>
+                    <p class="reveal reveal-text">
+                        <img class="icon-picture" src="images/html.png" alt="icône html"><img class="icon-picture" src="images/css.png" alt="icône css"><img class="icon-picture" src="images/composer.png" alt="icône composer">
+                        <img class="icon-picture" src="images/php.png" alt="icône php"><img class="icon-picture" src="images/mysql.png" alt="icône mysql">
+                    </p>
+                </div>
+            </div>
+        </article>
+
+        <article class="section-scroll">
+            <div class="grid-picture-container">
+                <a href="" target="_blank"><img class="picture-size" src="images/mobilean.png" alt="lien site mobilean"></a>
+                <div>
+                    <h3 class="reveal reveal-title">Projet 3: Mobilean</h3>
+                    <hr class="reveal reveal-hr">
+                    <p class="reveal reveal-text">Mobilean propose des solutions de location clés en main au gaz naturel (GNV). 
+                        <br>Avec une flotte de véhicule particuliers ou utilitaires.
+                    <p class="reveal reveal-text"><span>Première utilisation du Framework Symfony en groupe.</span></p>
+                    <p class="reveal reveal-text">
+                        <img class="icon-picture" src="images/html.png" alt="icône html"><img class="icon-picture" src="images/css.png" alt="icône css"><img class="icon-picture" src="images/js.png" alt="icône js">
+                        <img class="icon-picture" src="images/symfony.png" alt="icône symfony"><img class="icon-picture" src="images/php.png" alt="icône php"><img class="icon-picture" src="images/mysql.png" alt="icône mysql">
+                    </p>  
+                </div>
+            </div>
+        </article>
+
+        <article class="section-scroll">
+            <div class="grid-picture-container">
+                <a href="https://retro-cycling.fr" target="_blank"><img class="picture-size" src="images/retrocycling.png" alt="lien site retro-cycling"></a>
+                <div>
+                    <h3 class="reveal reveal-title">Retro-cycling.fr</h3>
+                    <hr class="reveal reveal-hr">
+                    <p class="reveal reveal-text">retro-cycling.fr est un site communautaire visant les passioné(e)s de cyclisme avant tout.
+                        Retro-cycling se concentre sur l'histoire du cyclisme, les maillots, les coureurs, les grands tours ...</p>
+                    <p class="reveal reveal-text"><span>Utilisation de l'API Leaflet.</span></p>
+                    <p class="reveal reveal-text">
+                        <img class="icon-picture" src="images/html.png" alt="icône html"><img class="icon-picture" src="images/css.png" alt="icône css"><img class="icon-picture" src="images/js.png" alt="icône js">
+                        <img class="icon-picture" src="images/php.png" alt="icône php"><img class="icon-picture" src="images/symfony.png" alt="icône symfony"><img class="icon-picture" src="images/mysql.png" alt="icône mysql">
+                    </p>  
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <footer>
+        <div class="contact-section">
+            <p id="contact-title">Vous souhaitez me contacter /<br> en savoir plus ?</p>
+            <hr class="contact-title-hr">
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/yann-raulet37" target="_blank" title="Lien vers linkedin"><img class="social-logo" src="images/linkedin.png" alt="icône linkedin"></a>
+                <a href="https://github.com/YannRaulet" target="_blank" title="Lien vers github"><img class="social-logo" src="images/github.png" alt="icône github"></a>
+            </div>
+            <div class="mail-phone-contact">
+                <p>Mail : yann.raulet@hotmail.fr</p>
+                <p>Tél :06.43.41.54.90</p>
+            </div>
+            <p class="copyright">Copyright by Yann Raulet</p>
+        </div>
+    </footer>
+
+    <!---JavaScript part -->
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+
+    <script type="text/javascript">
+        const reveal = gsap.utils.toArray('.reveal');
+        reveal.forEach((text, i) => {
+            ScrollTrigger.create({
+                trigger: text,
+                toggleClass: 'active',
+                start: "top 90%",
+                end: "top 10%",
+            })
+        })
+
+        const images = gsap.utils.toArray('.picture-size');
+        images.forEach((img, i) => {
+            ScrollTrigger.create({
+                trigger: img,
+                toggleClass: 'active',
+                start: "top 90%",
+                end: "top 10%",
+            })
+        })
+    </script>
+
+    <script type="text/javascript">
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+        const navLink = document.querySelectorAll(".nav-link");
+
+        hamburger.addEventListener("click", mobileMenu);
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function mobileMenu() {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
+
+        function closeMenu() {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }
+    </script>
+
+    <script type="text/javascript">
+        var skew1 = document.querySelector('.skew1');
+        window.addEventListener('scroll', function(){
+            var value = -10 + window.scrollY/60;
+            skew1.style.transform = "skewY("+ value +"deg)"
+        });
+    </script>
+</body>
+</html>
