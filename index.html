@@ -6,7 +6,6 @@
     <title>Yann Raulet</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
-
 </head>
 
 <body>
@@ -28,7 +27,6 @@
                     <span class="bar"></span>
                 </div>
             </nav>
-
             <div class="name-container">
                 <p></p>
                 <h1 class="presentation-text">Yann Raulet</h1>
@@ -45,10 +43,9 @@
         <h2 class="section-description">Qui suis-je ?</h2>
         <hr class="about-section-hr">
         <p class="picture-background"></p>
-        <p class="description-text"><span>Bienvenue sur mon portfolio !</span></p>
         <p class="description-text">Je m'appelle Yann Raulet et je suis ravi de votre visite. En reconversion professionnelle depuis septembre 2020 après une expérience enrichissante tant sur le plan professionnel que
             sur le plan humain dans le domaine du commerce, je savais qu'il était temps pour moi de voguer vers de nouveaux horizons. Après une période de réflexion puis la réalisation d'un dossier de Transition Professionnelle,
-            j'ai finalement suivi une formation à la Wild Code School de Tours afin de devenir <br><span>développeur web back-end ( PHP / Symfony)</span>.</p>
+            j'ai finalement suivi une formation à la Wild Code School de Tours afin de devenir <span>développeur web back-end ( PHP / Symfony)</span>.</p>
         <p class="description-text"> La formation n'a pas été de tout repos, il y a eu des hauts et des bas, mais redoublant d'efforts, je n'ai pas lâché.
             Je n'avais que des bases (HTML / CSS) avant d'intégrer cette formation, mais découvrir et apprendre ont toujours été de véritables moteurs pour moi, ce que le développement web offre sans commune mesure.
             Ayant abordé rapidement le JavaScript durant cette période, je me forme dessus afin d'élargir mes connaissances en "front-end". 
@@ -73,7 +70,6 @@
             <hr class="my-projects-section-hr">
             <div class="description-projects">
                 <p>Vous retrouverez dans cette section les différents projets sur lesquels j'ai été amené à travailler.
-                <p>Vous pouvez cliquer sur les images pour accéder aux différents projets.</p>
                 <p>Les icônes utilisées sont issues du site <a href="https://www.flaticon.com/fr/" title="Flaticon">flaticon.com</a> (conçues par <a href="https://www.flaticon.com/fr/auteurs/pixel-perfect" title="Pixel perfect">Pixel perfect</a>
                 et <a href="https://www.freepik.com" title="Freepik">Freepik)</a> et sur <a href="https://icons8.com/">Icons8.fr</a></p>
             </div>   
@@ -81,7 +77,7 @@
 
         <article class="section-scroll">
             <div class="grid-picture-container">
-                <a href="https://musictionary.go.yj.fr/public/" target="_blank"><img class="picture-size" src="images/musictionary.png" alt="lien site musictionary"></a>
+                <img class="picture-size" src="images/musictionary.png" alt="lien site musictionary">
                 <div>
                     <h3 class="reveal reveal-title">Projet 1 : Musictionary</h3>
                     <hr class="reveal reveal-hr">
@@ -91,6 +87,7 @@
                         <img class="icon-picture" src="images/html.png" alt="icône html"><img class="icon-picture" src="images/css.png" alt="icône css"><img class="icon-picture" src="images/js.png" alt="icône js">
                         <img class="icon-picture" src="images/php.png" alt="icône php">
                     </p>
+                    <a href="https://musictionary.go.yj.fr/public/" class="reveal reveal-text btn-project" target="_blank">Voir le projet</a>
                 </div>
             </div>
         </article>
@@ -133,17 +130,18 @@
 
         <article class="section-scroll">
             <div class="grid-picture-container">
-                <a href="https://retro-cycling.fr" target="_blank"><img class="picture-size" src="images/retrocycling.png" alt="lien site retro-cycling"></a>
+                <img class="picture-size" src="images/retrocycling.png" alt="lien site retro-cycling">
                 <div>
                     <h3 class="reveal reveal-title">Retro-cycling.fr</h3>
                     <hr class="reveal reveal-hr">
-                    <p class="reveal reveal-text">retro-cycling.fr est un site communautaire visant les passioné(e)s de cyclisme avant tout.
+                    <p class="reveal reveal-text">retro-cycling.fr est un site réalisé en binôme visant les passioné(e)s de cyclisme avant tout.
                         Retro-cycling se concentre sur l'histoire du cyclisme, les maillots, les coureurs, les grands tours ...</p>
-                    <p class="reveal reveal-text"><span>Utilisation de l'API Leaflet.</span></p>
+                        <p class="reveal reveal-text"><span>Utilisation de l'API Leaflet.</span></p>
                     <p class="reveal reveal-text">
                         <img class="icon-picture" src="images/html.png" alt="icône html"><img class="icon-picture" src="images/css.png" alt="icône css"><img class="icon-picture" src="images/js.png" alt="icône js">
                         <img class="icon-picture" src="images/php.png" alt="icône php"><img class="icon-picture" src="images/symfony.png" alt="icône symfony"><img class="icon-picture" src="images/mysql.png" alt="icône mysql">
-                    </p>  
+                    </p>
+                    <a href="https://retro-cycling.fr" class="reveal reveal-text btn-project" target="_blank">Voir le projet</a>
                 </div>
             </div>
         </article>
@@ -213,12 +211,5 @@
         }
     </script>
 
-    <script type="text/javascript">
-        var skew1 = document.querySelector('.skew1');
-        window.addEventListener('scroll', function(){
-            var value = -10 + window.scrollY/60;
-            skew1.style.transform = "skewY("+ value +"deg)"
-        });
-    </script>
 </body>
 </html>
