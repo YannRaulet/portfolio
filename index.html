@@ -55,7 +55,7 @@
         </p>
 
         <div class="hobbies-icons-first-container">
-            <p class="hobbies-icons"><img src="images/ciné.jpg" alt="image cinéma"></p>
+            <img class="hobbies-icons" src="images/ciné.jpg" alt="image cinéma">
             <p class="hobbies-icons"><img src="images/vinyle.jpg" alt="image platine vinyle"></p>
         </div>
         <div class="hobbies-icons-second-container">
@@ -72,7 +72,7 @@
                 <p>Vous retrouverez dans cette section les différents projets sur lesquels j'ai été amené à travailler.
                 <p>Les icônes utilisées sont issues du site <a href="https://www.flaticon.com/fr/" title="Flaticon">flaticon.com</a> (conçues par <a href="https://www.flaticon.com/fr/auteurs/pixel-perfect" title="Pixel perfect">Pixel perfect</a>
                 et <a href="https://www.freepik.com" title="Freepik">Freepik)</a> et sur <a href="https://icons8.com/">Icons8.fr</a></p>
-            </div>   
+            </div>
         </article>
 
         <article class="section-scroll">
@@ -87,14 +87,14 @@
                         <img class="icon-picture" src="images/html.png" alt="icône html"><img class="icon-picture" src="images/css.png" alt="icône css"><img class="icon-picture" src="images/js.png" alt="icône js">
                         <img class="icon-picture" src="images/php.png" alt="icône php">
                     </p>
-                    <a href="https://musictionary.go.yj.fr/public/" class="reveal reveal-text btn-project" target="_blank">Voir le projet</a>
                 </div>
             </div>
         </article>
 
         <article class="section-scroll">
             <div class="grid-picture-container">
-                <img class="picture-size" src="images/mybook.png" alt="lien site mybook">
+                <a href="https://www.loom.com/share/320a0683195a4710ae08e994447d49d4" target="_blank"><img class="picture-size" src="images/mybook.png" alt="lien site mybook">
+                </a>
                 <div>
                     <h3 class="reveal reveal-title">Projet 2 : Mybook</h3>
                     <hr class="reveal reveal-hr">   
@@ -107,6 +107,7 @@
                         <img class="icon-picture" src="images/html.png" alt="icône html"><img class="icon-picture" src="images/css.png" alt="icône css"><img class="icon-picture" src="images/composer.png" alt="icône composer">
                         <img class="icon-picture" src="images/php.png" alt="icône php"><img class="icon-picture" src="images/mysql.png" alt="icône mysql">
                     </p>
+                    <a href="https://www.loom.com/share/320a0683195a4710ae08e994447d49d4" class="reveal reveal-text btn-project" target="_blank">Voir le projet <br> (vidéo)</a>
                 </div>
             </div>
         </article>
@@ -123,14 +124,16 @@
                     <p class="reveal reveal-text">
                         <img class="icon-picture" src="images/html.png" alt="icône html"><img class="icon-picture" src="images/css.png" alt="icône css"><img class="icon-picture" src="images/js.png" alt="icône js">
                         <img class="icon-picture" src="images/symfony.png" alt="icône symfony"><img class="icon-picture" src="images/php.png" alt="icône php"><img class="icon-picture" src="images/mysql.png" alt="icône mysql">
-                    </p>  
+                    </p>
+                    <a href="" class="reveal reveal-text btn-project" target="_blank">Voir le projet <br> (vidéo)</a>
                 </div>
             </div>
         </article>
 
         <article class="section-scroll">
             <div class="grid-picture-container">
-                <img class="picture-size" src="images/retrocycling.png" alt="lien site retro-cycling">
+                <a href="https://retro-cycling.fr" target="_blank"><img class="picture-size" src="images/retrocycling.png" alt="lien site retro-cycling"></a>
+                
                 <div>
                     <h3 class="reveal reveal-title">Retro-cycling.fr</h3>
                     <hr class="reveal reveal-hr">
@@ -177,17 +180,17 @@
                 trigger: text,
                 toggleClass: 'active',
                 start: "top 90%",
-                end: "top 10%",
+                //end: "top 10%",
             })
         })
 
-        const images = gsap.utils.toArray('.picture-size');
+        const images = gsap.utils.toArray('.picture-size, .hobbies-icons');
         images.forEach((img, i) => {
             ScrollTrigger.create({
                 trigger: img,
                 toggleClass: 'active',
                 start: "top 90%",
-                end: "top 10%",
+                //end: "top 10%",
             })
         })
     </script>
@@ -210,6 +213,5 @@
             navMenu.classList.remove("active");
         }
     </script>
-
 </body>
 </html>

@@ -148,7 +148,6 @@ a {
 
 .description-text {
     font-size: 1.5rem;
-    /*letter-spacing: 1px;*/
     width: 50%;
     padding: 1% 0;
     margin: auto;
@@ -181,6 +180,8 @@ a {
     box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
     transform: rotate(45deg);
     overflow: hidden;
+    opacity: 0;
+    transition: 1.5s;
 }
 
 .hobbies-icons img {
@@ -192,6 +193,12 @@ a {
     object-fit: cover;
     padding-left: 150px;
     padding-bottom: 150px;
+}
+
+.hobbies-icons.active{
+    left: 0;
+    opacity: 1;
+    object-fit: cover;
 }
 
 .picture-background {
