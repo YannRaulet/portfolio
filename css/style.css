@@ -524,6 +524,7 @@ a {
 
     .description-text {
         width: 85%;
+        font-size: 1.2rem;
         padding: 5% 0;
     }
 
@@ -568,6 +569,7 @@ a {
 
     .description-projects {
         width: 80%;
+        font-size: 1.2rem;
     }
 
     .section-scroll {
@@ -586,6 +588,16 @@ a {
         transition: 1.5s;
         object-fit: cover;
     }
+
+    .reveal-text {
+        font-size: 1.2rem;
+    }
+
+    .section-scroll .reveal:nth-child(4) {
+        font-weight: 300;
+        font-size: 1.2em;
+        letter-spacing: 2px;
+        }
 
     #contact-title {
         font-size: 20px;
