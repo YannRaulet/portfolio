@@ -32,7 +32,7 @@
                 <h1 class="presentation-text">Yann Raulet</h1>
                 <h2 class="presentation-text">Développeur <br>web PHP / Symfony</h2>
                 <div class="download-button-container">
-                    <input type="button" class="download-button" value="Télécharger mon CV" onclick="DownloadFile('cv-yann-raulet.pdf')" />
+                    <a href="https://oh9hlarqzw.preview.infomaniak.website/cv-yann-raulet.pdf" target="_blank"><button class="download-button">Télécharger mon CV</button></a>             
                 </div>
             </div>
         </section>
@@ -235,38 +235,6 @@
             hamburger.classList.remove("active");
             navMenu.classList.remove("active");
         }
-    </script>
-
-    <script>
-        function DownloadFile(fileName) {
-            //Set the File URL.
-            var url = "https://www.yann-raulet.com/images/cv-yann-raulet.pdf";
- 
-            //Create XMLHTTP Request.
-            var req = new XMLHttpRequest();
-            req.open("GET", url, true);
-            req.responseType = "blob";
-            req.onload = function () {
-                //Convert the Byte Data to BLOB object.
-                var blob = new Blob([req.response], { type: "application/octetstream" });
- 
-                //Check the Browser type and download the File.
-                var isIE = false || !!document.documentMode;
-                if (isIE) {
-                    window.navigator.msSaveBlob(blob, fileName);
-                } else {
-                    var url = window.URL || window.webkitURL;
-                    link = url.createObjectURL(blob);
-                    var a = document.createElement("a");
-                    a.setAttribute("download", fileName);
-                    a.setAttribute("href", link);
-                    document.body.appendChild(a);
-                    a.click();
-                    document.body.removeChild(a);
-                }
-            };
-            req.send();
-        };
     </script>
 </body>
 </html>
