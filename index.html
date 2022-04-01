@@ -31,20 +31,17 @@
                 <p></p>
                 <h1 class="presentation-text">Yann Raulet</h1>
                 <h2 class="presentation-text">Développeur <br>web PHP / Symfony</h2>
-                <div class="button-to-section-container">
-                    <a class="button-to-projects-section" href="#my-projects-section">Mes projets</a>
-                    <a class="button-to-contact-section" href="#contact-title">Me contacter</a>
+                <div class="download-button-container">
+                    <input type="button" class="download-button" value="Télécharger mon CV" onclick="DownloadFile('cv-yann-raulet.pdf')" />
                 </div>
             </div>
         </section>
     </header>
 
     <section class="about-section">
-        <h2 class="section-description">Qui suis-je ?</h2>
-        <hr class="about-section-hr">
         <p class="picture-background"></p>
-        <p class="description-text">Je m'appelle Yann Raulet et je suis ravi de votre visite. En reconversion professionnelle depuis septembre 2020 après une expérience enrichissante tant sur le plan professionnel que
-            sur le plan humain dans le domaine du commerce, je savai et nous étions tombé d'accord sur le fait que les leviers de motivation sont subjectifs qu'il était temps pour moi de voguer vers de nouveaux horizons.
+        <p class="description-text">Je m'appelle Yann Raulet et j'ai commencé ma nouvelle vie en septembre 2020 après une expérience enrichissante tant sur le plan professionnel que
+            sur le plan humain dans le domaine du commerce. Je savais qu'il était temps pour moi de voguer vers de nouveaux horizons.
             Après une période de réflexion puis la réalisation d'un dossier de Transition Professionnelle, j'ai finalement suivi une formation à la Wild Code School de Tours afin de devenir <span>développeur web back-end ( PHP / Symfony)</span>.</p>
         <p class="description-text"> La formation n'a pas été de tout repos, il y a eu des hauts et des bas, mais redoublant d'efforts, je n'ai pas lâché.
             Je n'avais que des bases (HTML / CSS) avant d'intégrer cette formation, mais découvrir et apprendre ont toujours été de véritables moteurs pour moi, ce que le développement web offre sans commune mesure.
@@ -53,7 +50,6 @@
         <p class="description-text"> 
             Afin d'étoffer mes connaissances et mes capacité techniques, j'ai intégré une formation C / C++ à distance avec le centre AJC Formation entre décembre 2021 et mars 2022. "Père de nombreux langages", apprendre le langage C permet aussi de mieux comprendre ces langages. 
         </p>
-
 
         <p class="description-text">En dehors de mon apprentissage dans le domaine du développemet web, j'aime le cinéma, la musique, la littérature et le sport, cela a construit celui que je suis aujourd'hui et nourrit ma curiosité chaque jour passant.
             <br>"Quid mento sid acto", ça ne veut rien dire, mais je trouve que cela clôture bien.
@@ -74,7 +70,7 @@
             <h2 id="my-projects-section">Mes projets</h2>
             <hr class="my-projects-section-hr">
             <div class="description-projects">
-                <p>Vous retrouverez dans cette section les différents projets sur lesquels j'ai été amené à travailler lors de ma formation et après.
+                <p>Vous retrouverez dans cette section plusieurs projets sur lesquels j'ai été amené à travailler.
                 <p>Les icônes utilisées sont issues du site <a href="https://www.flaticon.com/fr/" title="Flaticon">flaticon.com</a> (conçues par <a href="https://www.flaticon.com/fr/auteurs/pixel-perfect" title="Pixel perfect">Pixel perfect</a>
                 et <a href="https://www.freepik.com" title="Freepik">Freepik)</a> et sur <a href="https://icons8.com/">Icons8.fr</a></p>
             </div>
@@ -144,13 +140,34 @@
                     <h3 class="reveal reveal-title">Retro-cycling.fr</h3>
                     <hr class="reveal reveal-hr">
                     <p class="reveal reveal-text">retro-cycling.fr est un site réalisé en binôme visant les passioné(e)s de cyclisme avant tout.
-                        Retro-cycling se concentre sur l'histoire du cyclisme, les maillots, les coureurs, les grands tours ...</p>
+                        Retro-cycling se concentre sur l'histoire du cyclisme, les maillots, les coureurs ...
+                        
+                    </p>
                         <p class="reveal reveal-text"><span>Utilisation de l'API Leaflet.</span></p>
                     <p class="reveal reveal-text">
                         <img class="icon-picture" src="images/html.png" alt="icône html"><img class="icon-picture" src="images/css.png" alt="icône css"><img class="icon-picture" src="images/js.png" alt="icône js">
                         <img class="icon-picture" src="images/php.png" alt="icône php"><img class="icon-picture" src="images/symfony.png" alt="icône symfony"><img class="icon-picture" src="images/mysql.png" alt="icône mysql">
                     </p>
                     <a href="https://retro-cycling.fr" class="reveal reveal-text btn-project" target="_blank">Voir le projet</a>
+                </div>
+            </div>
+        </article>
+        <article class="section-scroll">
+            <div class="grid-picture-container">
+                <a href="https://oh9hlaqvaf.preview.infomaniak.website/" target="_blank"><img class="picture-size" src="images/labroudoute.png" alt="lien site labroudoute"></a>
+                
+                <div>
+                    <h3 class="reveal reveal-title">La Broudoute</h3>
+                    <hr class="reveal reveal-hr">
+                    <p class="reveal reveal-text">La Broudoute est un (faux) site e-commerce. Il est possible pour l'utilisateur de commandes des produits, voir son panier, voir ses achats passés ...
+                        <br>Les produits étant fictifs, le numéro de carte bancaire à rentrer est le : 4242 4242 4242 4242.
+                    </p>
+                        <p class="reveal reveal-text"><span>Utilisation de l'API Stripe pour le paiement et de Mailjet : service d'envoi d'emails.</span></p>
+                    <p class="reveal reveal-text">
+                        <img class="icon-picture" src="images/html.png" alt="icône html"><img class="icon-picture" src="images/css.png" alt="icône css"><img class="icon-picture" src="images/js.png" alt="icône js">
+                        <img class="icon-picture" src="images/php.png" alt="icône php"><img class="icon-picture" src="images/symfony.png" alt="icône symfony"><img class="icon-picture" src="images/mysql.png" alt="icône mysql">
+                    </p>
+                    <a href="https://oh9hlaqvaf.preview.infomaniak.website/" class="reveal reveal-text btn-project" target="_blank">Voir le projet</a>
                 </div>
             </div>
         </article>
@@ -218,6 +235,38 @@
             hamburger.classList.remove("active");
             navMenu.classList.remove("active");
         }
+    </script>
+
+    <script>
+        function DownloadFile(fileName) {
+            //Set the File URL.
+            var url = "https://www.yann-raulet.com/images/cv-yann-raulet.pdf";
+ 
+            //Create XMLHTTP Request.
+            var req = new XMLHttpRequest();
+            req.open("GET", url, true);
+            req.responseType = "blob";
+            req.onload = function () {
+                //Convert the Byte Data to BLOB object.
+                var blob = new Blob([req.response], { type: "application/octetstream" });
+ 
+                //Check the Browser type and download the File.
+                var isIE = false || !!document.documentMode;
+                if (isIE) {
+                    window.navigator.msSaveBlob(blob, fileName);
+                } else {
+                    var url = window.URL || window.webkitURL;
+                    link = url.createObjectURL(blob);
+                    var a = document.createElement("a");
+                    a.setAttribute("download", fileName);
+                    a.setAttribute("href", link);
+                    document.body.appendChild(a);
+                    a.click();
+                    document.body.removeChild(a);
+                }
+            };
+            req.send();
+        };
     </script>
 </body>
 </html>
