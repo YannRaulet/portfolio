@@ -27,41 +27,77 @@
                     <span class="bar"></span>
                 </div>
             </nav>
-            <div class="name-container">
-                <p></p>
-                <h1 class="presentation-text">Yann Raulet</h1>
-                <h2 class="presentation-text">Développeur <br>web PHP / Symfony</h2>
-                <div class="download-button-container">
-                    <a href="https://oh9hlarqzw.preview.infomaniak.website/cv-yann-raulet.pdf" target="_blank"><button class="download-button">Télécharger mon CV</button></a>             
+        </section>
+
+        <section class="scene-section">
+            <div class="feature">
+                <div class="screen" id="screen">
+                    <div class="scene " id="scene0">
+                        <div class="scene__content">
+                            <div class="scene__text">" Chère visiteuse, </div>
+                            <div class="scene__text">cher visiteur,</div>
+                            <div class="scene__text">bien le bonjour ! "</div>
+                        </div>
+                    </div>
+                    <div class="scene " id="scene1">
+                        <div class="scene__content">
+                            <div class="scene__text">" Vous êtes sur</div>
+                            <div class="scene__text">le portfolio </div>
+                            <div class="scene__text">de Yann Raulet,</div>
+                            <div class="scene__text">développeur web. "</div>
+                        </div>
+                    </div>
+                    <div class="scene " id="scene2">
+                        <div class="scene__content">
+                            <div class="scene__text">" L'équipage est </div>
+                            <div class="scene__text">ravi de </div>
+                            <div class="scene__text">vous accueillir</div>
+                            <div class="scene__text">à bord. "</div>
+                        </div>				
+                    </div>
+                    <div class="scene " id="scene3">
+                        <div class="scene__content">
+                            <div class="scene__text">" Installez-vous </div>
+                            <div class="scene__text">confortablement </div>
+                            <div class="scene__text">et profitez</div>
+                            <div class="scene__text">de la visite. "</div>
+                        </div>				
+                    </div>
+                    <div class="scene " id="scene4">
+                        <div class="scene__content">
+                            <div class="scene__text">" BON VOYAGE "</div>
+                        </div>				
+                    </div>
+                    
+                    <canvas class="screen__noise" id="noise"></canvas>
+                    <div class="screen__effects" id="effects"></div>
+                    <div class="screen_vignette"></div>
                 </div>
             </div>
+            <!--Scroll down arrow -->
+            <a href="#about-section" onclick="scrollWin()" class="scroll-down"></a>
+            
         </section>
     </header>
 
     <section class="about-section">
         <p class="picture-background"></p>
-        <p class="description-text">Je m'appelle Yann Raulet et j'ai commencé ma nouvelle vie en septembre 2020 après une expérience enrichissante tant sur le plan professionnel que
-            sur le plan humain dans le domaine du commerce. Je savais qu'il était temps pour moi de voguer vers de nouveaux horizons.
-            Après une période de réflexion puis la réalisation d'un dossier de Transition Professionnelle, j'ai finalement suivi une formation à la Wild Code School de Tours afin de devenir <span>développeur web back-end ( PHP / Symfony)</span>.</p>
-        <p class="description-text"> La formation n'a pas été de tout repos, il y a eu des hauts et des bas, mais redoublant d'efforts, je n'ai pas lâché.
-            Je n'avais que des bases (HTML / CSS) avant d'intégrer cette formation, mais découvrir et apprendre ont toujours été de véritables moteurs pour moi, ce que le développement web offre sans commune mesure.
-            Après une période de stage en binôme de 4 mois où nous avons réalisé en mis en ligne un site vitrine présentant une collection d'anciens maillots de vélo d'un particulier, j'ai continué mon périple en réalisant de mon côté un site de vente en ligne factice.
+        <p class="description-text">Je m'appelle Yann Raulet et j'ai commencé ma nouvelle vie en septembre 2020 après une expérience enrichissante tant sur le plan humain que professionnel
+            dans le domaine du commerce. Après une période de réflexion, j'ai suivi une formation de développeur web / web mobile ( PHP / Symfony) à la Wild Code School de Tours.</p>
+        <p class="description-text"> La formation n'a pas été de tout repos, mais découvrir et apprendre ont toujours été de véritables moteurs pour moi. S'en est suivie une
+            période de stage en binôme de 4 mois où nous avons réalisé en mis en ligne un site vitrine présentant une collection d'anciens maillots de vélo d'un particulier.
+            Mon périple m'a par la suite mené vers la réalisation d'un site de vente en ligne factice de mon côté.
         </p>
         <p class="description-text"> 
             Afin d'étoffer mes connaissances et mes capacité techniques, j'ai intégré une formation C / C++ à distance avec le centre AJC Formation entre décembre 2021 et mars 2022. "Père de nombreux langages", apprendre le langage C permet aussi de mieux comprendre ces langages. 
         </p>
 
         <p class="description-text">En dehors de mon apprentissage dans le domaine du développemet web, j'aime le cinéma, la musique, la littérature et le sport, cela a construit celui que je suis aujourd'hui et nourrit ma curiosité chaque jour passant.
-            <br>"Quid mento sid acto", ça ne veut rien dire, mais je trouve que cela clôture bien.
+            <br>Comme le dit si bien Georges Abitbol : "Le train de tes injures roule sur les rails de mon indifférence !". Cela ne veut rien dire ici, mais j'aime bien cette expression.
         </p>
 
-        <div class="hobbies-icons-first-container">
-            <img class="hobbies-icons" src="images/ciné.jpg" alt="image cinéma">
-            <p class="hobbies-icons"><img src="images/vinyle.jpg" alt="image platine vinyle"></p>
-        </div>
-        <div class="hobbies-icons-second-container">
-            <p class="hobbies-icons"><img src="images/book.jpg" alt="image livres"></p>
-            <p class="hobbies-icons"><img src="images/sport.jpg" alt="image sport"></p>
+        <div class="download-button-container">
+            <a href="https://oh9hlarqzw.preview.infomaniak.website/cv-yann-raulet.pdf" target="_blank"><button class="download-button">Télécharger mon CV</button></a>             
         </div>
     </section>
 
@@ -191,12 +227,12 @@
         </div>
     </footer>
 
-    <!---JavaScript part -->
     <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
 
     <script type="text/javascript">
+        // Projects animation
         const reveal = gsap.utils.toArray('.reveal');
         reveal.forEach((text, i) => {
             ScrollTrigger.create({
@@ -219,6 +255,7 @@
     </script>
 
     <script type="text/javascript">
+        // Responsive nav menu
         const hamburger = document.querySelector(".hamburger");
         const navMenu = document.querySelector(".nav-menu");
         const navLink = document.querySelectorAll(".nav-link");
@@ -235,6 +272,112 @@
             hamburger.classList.remove("active");
             navMenu.classList.remove("active");
         }
+    </script>
+
+    <script type="text/javascript">
+        // SLIDESHOW
+        var sceneIndex = 0;
+        showScenes();
+
+        function showScenes() {
+            var i;
+            var scenes = document.getElementsByClassName("scene");
+            for (i = 0; i < scenes.length; i++) {
+                scenes[i].style.display = "none";
+            }
+            sceneIndex++;
+            if (sceneIndex > scenes.length) {
+                sceneIndex = 1
+            }
+            scenes[sceneIndex-1].style.display = "flex";
+            setTimeout(showScenes, 4000); // 
+        } 
+
+        // SNAP CRACKLE POP
+        // CANVAS NOISE SCRIPT
+        const noise = () => {
+            let canvas, ctx;
+            let wWidth, wHeight;
+            let noiseData = [];
+            let frame = 0;
+            let loopTimeout;
+
+            // create Noise
+            const createNoise = () => {
+                const idata = ctx.createImageData(wWidth, wHeight);
+                const buffer32 = new Uint32Array(idata.data.buffer);
+                const len = buffer32.length;
+
+                for (let i = 0; i < len; i++) {
+                    if (Math.random() < 0.5) {
+                        buffer32[i] = 0xff000000;
+                    }
+                }
+                noiseData.push(idata);
+            };
+
+            // play Noise
+            const paintNoise = () => {
+                if (frame === 9) {
+                    frame = 0;
+                } else {
+                    frame++;
+                }
+
+                ctx.putImageData(noiseData[frame], 0, 0);
+            };
+
+            // loop
+            const loop = () => {
+                paintNoise(frame);
+                loopTimeout = window.setTimeout(() => {
+                    window.requestAnimationFrame(loop);
+                }, (1000 / 25));
+            };
+
+            // setup
+            const setup = () => {
+                wWidth = window.innerWidth;
+                wHeight = window.innerHeight;
+
+                canvas.width = wWidth;
+                canvas.height = wHeight;
+
+                for (let i = 0; i < 10; i++) {
+                    createNoise();
+                }
+                loop();
+            };
+
+            // reset
+            let resizeThrottle;
+            const reset = () => {
+                window.addEventListener('resize', () => {
+                    window.clearTimeout(resizeThrottle);
+                    resizeThrottle = window.setTimeout(() => {
+                        window.clearTimeout(loopTimeout);
+                        setup();
+                    }, 200);
+                }, false);
+            };
+
+            // init
+            const init = (() => {
+                canvas = document.getElementById('noise');
+                ctx = canvas.getContext('2d');
+                setup();
+            })();
+        };
+        noise();
+
+    </script>
+
+    <script>
+        // animation arrow scroll down
+        function scrollWin() {
+            window.scrollBy(0, 750);
+        }
+
     </script>
 </body>
 </html>

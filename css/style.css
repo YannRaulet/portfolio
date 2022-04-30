@@ -1,8 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Ultra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Ultra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Bungee+Shade&family=Ultra&display=swap');
 
 body {
     margin: 0px;
     padding: 0px;
+    /*font-family:'Crimson Text',serif;*/
+
     font-family: 'Ubuntu', sans-serif;
 }
 
@@ -22,13 +29,7 @@ a {
 
 .nav-section {
     width: 100%;
-    height: 110vh;
-    background-image:url("../images/background-picture.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
-    overflow: hidden;
+    height: 100vh;
 }
 
 .navbar {
@@ -37,7 +38,6 @@ a {
     align-items: center;
     position: fixed;
     width: 100%;
-    background-color: #fff;
     z-index: 1000;
 }
 
@@ -107,13 +107,15 @@ a {
 }
 
 .download-button-container {
-    padding-top: 10%;
+    display: flex;
+    justify-content: center;
+    padding: 8%;
 }
 
 .download-button {
     text-decoration: none;
-    padding: 20px;
-    font-size: 15px;
+    padding: 30px;
+    font-size: 20px;
     letter-spacing: 2px;
     color: #475569;
     border: 2px #f1e4d8 solid;
@@ -126,10 +128,292 @@ a {
     opacity: 0.8;
 }
 
+
+
+
+
+
+
+
+
+/* Homepage 
+animation
+-----------------------*/
+.scene-section {
+	display:flex;
+	flex-direction:column;
+}
+
+.feature {
+	align-items:center;
+	display:flex;
+	flex-direction:column;
+	height:100%;
+	justify-content:center;
+	width:100%;
+}
+
+.screen {
+    background-color: #e3e3e36c;
+	background-size:auto 102%;
+    background-repeat:no-repeat;
+    height: 108vh; /*height of the animation */
+    width: 100%;
+	filter:sepia(40%);
+	left:50%;
+	overflow:hidden;
+	position:absolute;
+	top:50%;
+    transform:translate(-50%,-50%);
+}
+
+.screen::after {
+    box-shadow:inset 0px 0px 150px 20px #000;
+    content:'';
+    height:100%;
+    left: 0;
+    mix-blend-mode:color;
+    position:absolute;
+    top:0;
+    width:100%; 
+    z-index:90;
+}
+
+.screen__noise {
+    left:0;
+    height:100%;
+    opacity:.05;
+    pointer-events:none;
+    position:absolute;
+    top:0;
+    width:100%;
+    z-index:100;
+}
+.screen__effects {
+    height: 105%;
+    margin-top:-20px;
+    margin-left:-20px;
+    position:absolute;
+	width:105%;
+}
+
+.screen__effects::before{
+    animation:gradientSize 1.5s infinite;
+    box-shadow:inset 0 0 10em rgba(0,0,0,1);
+    content:'';
+    height:100%;
+    left:0;
+    position:absolute;
+    top:0;
+    width:100%;
+}
+
+.screen__effects::after{
+    animation:moveLine 8s infinite;
+    background-color:#000;
+    content:'';
+    display:block;
+    height:100%;
+    position:absolute;
+    width:1px;
+}
+	
+.screen_vignette {
+    box-shadow:inset 0px 0px 150px 20px #000;
+    height:100%;
+    mix-blend-mode:multiply;
+    position:absolute;
+  	width:100%; 
+}
+
+.scene {
+	display:none;
+	height:100%;
+	left:0;
+	overflow:hidden;
+	position:absolute;
+	top:0;
+	width:100%;
+}
+
+.scene__content {	
+    align-items:center;
+    animation:moveContentPos 5s infinite, blurContent 5s infinite;
+    display:flex;
+    filter:blur(.6px);
+    flex-direction:column;
+    height:100%;
+    left:0;
+    justify-content:center;
+    margin:10px;
+    overflow:hidden;
+    position:relative;
+    top:0;
+    width:100%;
+}
+
+/* Customize text */
+.scene__text {
+    color:#000;
+    font-family: 'Merienda One', cursive;
+    font-size:60px;
+    margin-bottom:5px;
+}
+
+.scene.active {
+    display:flex;
+}
+
+/* ANIMATIONS
+animations adapted from Antoinette Janus'  Old Time Movie pen*/
+@keyframes gradientSize {
+  0%{opacity:0.3;}
+  10%{opacity:0.4;}
+  20%{opacity:0.25;}
+  30%{opacity:0.5;}
+  40%{opacity:0.75;}
+  50%{opacity:0.5;}
+  60%{opacity:1;}
+  70%{opacity:0.75}
+  80%{opacity:0.5;}
+  90%{opacity:0.25;}
+  100%{opacity:0.5;}
+}
+
+/* moves the line */
+@keyframes moveLine{
+  0%{left:0;opacity:0;}
+  9%{left:0;opacity:0;}
+  10%{left:15%;opacity:0.25;}
+  15%{left:20%;opacity:0.1;}
+  20%{left:10%;opacity:0.2;}
+  25%{left:25%;opacity:0.2;}
+  30%{left:30%;opacity:0.3;}
+  40%{left:20%;opacity:0.2;}
+  50%{left:30%;opacity:0.1;}
+  60%{left:20%;opacity:0.2;}
+  70%{left:0%;opacity:0.2;}
+  80%{left:10%;opacity:0.2;}
+  90%{left:30%;opacity:0.3;}
+  100%{left:10%;opacity:0.1;}
+}
+
+/* animation adapted from Dimitra Vasilopoulou's Silent Movie Text Effect pen */
+@keyframes vignette {
+  0%,100%{opacity:1;}
+  50%{opacity:0.7;}
+}
+
+/* new animations moves the text content around a little bit */
+@keyframes moveContentPos{
+  0%{left:0px;top:0;}
+  5%{left:0;top:0;}
+  10%{left:0;top:-1px;}
+  15%{left:0;top:0;}
+  30%{left:0px;top:0;}
+  37%{left:-1px;top:0;}
+  40%{left:0px;top:0;}
+  45%{left:0;top:2px;}
+  50%{left:0px;top:0;}
+  62%{left:-1px;top:0;}
+  65%{left:0;top:-2px;}
+  67%{left:0px;top:0;}
+  78%{left:0px;top:0;}
+  80%{left:0;top:2px;}
+  85%{left:0;top:0;}
+  100%{left:0px;top:0;}
+}
+
+@keyframes blurContent {
+	0% {filter:blur(.4px);}
+	5% {filter:blur(.5px);}
+	10% {filter:blur(.5px);}
+	15% {filter:blur(.6px);}
+	20% {filter:blur(.6px);}
+	25% {filter:blur(.5px);}
+	30% {filter:blur(.4px);}
+	36% {filter:blur(.6px);}
+	42% {filter:blur(.7px);}
+	48% {filter:blur(.8px);}
+	57% {filter:blur(.7px);}
+	60% {filter:blur(.6px);}
+	65% {filter:blur(.5px);}
+	71% {filter:blur(.6px);}
+	78% {filter:blur(.8px);}
+	83% {filter:blur(.9px);}
+	89% {filter:blur(.7px);}
+	94% {filter:blur(.5px);}
+	100% {filter:blur(.4px);}
+}
+
+/* Scroll down arrow
+-------------------------*/
+
+.scroll-down {
+    scroll-behavior: smooth;
+
+}
+.scroll-down {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -16px;
+    display: block;
+    width: 32px;
+    height: 32px;
+    border: 2px solid rgba(34, 34, 34, 0.911);
+    opacity: 0.5;
+    background-size: 14px auto;
+    border-radius: 50%;
+    z-index: 2;
+    -webkit-animation: bounce 2s infinite 2s;
+    animation: bounce 2s infinite 2s;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+
+}
+
+.scroll-down:before {
+    position: absolute;
+    top: calc(50% - 8px);
+    left: calc(50% - 6px);
+    transform: rotate(-45deg);
+    display: block;
+    width: 12px;
+    height: 12px;
+    content: "";
+    border: 2px solid rgba(34, 34, 34, 0.911);
+    opacity: 0.5;
+    border-width: 0px 0 2px 2px;
+}
+
+@keyframes bounce {
+    0%,
+    100%,
+    20%,
+    50%,
+    80% {
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -webkit-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+    60% {
+        -webkit-transform: translateY(-5px);
+        -ms-transform: translateY(-5px);
+        transform: translateY(-5px);
+    }
+}
+
+
 /* ABOUT SECTION
 -------------------------------------------------- */
 .about-section {
-    background-image:url("../images/grey-background.jpg");
+    background-image:url("../images/brown-background.jpg");
 }
 
 .picture-background {
@@ -137,7 +421,6 @@ a {
     width: 500px;
     height: 500px;
     background-repeat: no-repeat;
-    background-size: cover;
     margin: auto;
     padding-top: 40px;
     margin-bottom: 5%;
@@ -153,49 +436,6 @@ a {
 
 .description-text span{
     font-weight: bold;
-}
-
-.hobbies-icons-first-container {
-    display: flex;
-    justify-content: center;
-    padding-top: 5%;
-}
-
-.hobbies-icons-second-container {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 5%;
-}
-
-.hobbies-icons {
-    width: 180px;
-    height: 180px;
-    display: flex;
-    justify-content:space-around;
-    background-color: #e6e3e3;
-    border: 1px solid #cbcbcb;
-    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
-    transform: rotate(45deg);
-    overflow: hidden;
-    opacity: 0;
-    transition: 1.5s;
-}
-
-.hobbies-icons img {
-    width: 280px;
-    height: 280px;
-    transform: rotate(-45deg);
-    display: flex;
-    justify-content: center;
-    object-fit: cover;
-    padding-left: 150px;
-    padding-bottom: 150px;
-}
-
-.hobbies-icons.active{
-    left: 0;
-    opacity: 1;
-    object-fit: cover;
 }
 
 .description-projects {
@@ -215,7 +455,7 @@ a {
 /* PROJECTS SECTION
 -------------------------------------------------- */
 .projects-section {
-    background-color: #88A0C6;
+    background-image:url("../images/grey-background.jpg");
 }
 
 #my-projects-section{
@@ -433,6 +673,7 @@ a {
 
 /* RESPONSIVE
 -------------------------------------------------- */
+
 @media screen and (max-width: 768px) {
     /* NAVBAR */
     .navbar {
@@ -444,7 +685,7 @@ a {
         right: -120%;
         top: 2.5rem;
         flex-direction: column;
-        background-color: #fff;
+        background-color:#e6e3e3;
         width: 100%;
         border-radius: 10px;
         text-align: center;
@@ -487,13 +728,7 @@ a {
     .nav-section {
         width: 100%;
         height: 100vh;
-        background-image:url("../images/background-picture-small.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-        position: relative;
-        overflow: hidden;
-        background-position: center;
+
     }
 
     .container-nav {
@@ -508,11 +743,17 @@ a {
         font-size: 50px;
     }
 
+    /* ANIMATION
+    Customize text */
+    .scene__text {
+        font-size: 25px;
+    }
+
     /* ABOUT SECTION */
     .about-section-hr {
         width: 40%;
     }
-
+    
     .picture-background {
         background-image:url("../images/photo-small.png");
         width: 250px;
@@ -529,35 +770,9 @@ a {
         padding: 5% 0;
     }
 
-    .hobbies-icons-second-container {
-        padding-bottom: 10%;
-    }
-
-    .hobbies-icons {
-        width: 100px;
-        height: 100px;
-        display: flex;
-        justify-content: space-around;
-        background-color: #e6e3e3;
-        border: 1px solid #cbcbcb;
-        box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
-        transform: rotate(45deg);
-        overflow: hidden;
-    }
-
-    .hobbies-icons-container {
-        padding-top: 5%;
-    }
-
-    .hobbies-icons img {
-        width: 150px;
-        height: 150px;
-        transform: rotate(-45deg);
-        display: flex;
-        justify-content: center;
-        object-fit: cover;
-        padding-left: 150px;
-        padding-bottom: 150px;
+    .download-button {
+        padding: 20px;
+        font-size: 15px;
     }
 
     /* PROJECTS SECTION */
