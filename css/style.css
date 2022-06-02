@@ -5,16 +5,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Ultra&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Bungee+Shade&family=Ultra&display=swap');
 
+:root {
+    --primary-color : rgb(68, 64, 64);
+}
+
 body {
     margin: 0px;
     padding: 0px;
-    /*font-family:'Crimson Text',serif;*/
-
     font-family: 'Ubuntu', sans-serif;
 }
 
 /* NAVBAR
--------------------------------------------------- */
+=========================================== */
 li {
     list-style: none;
 }
@@ -30,19 +32,81 @@ a {
 .nav-section {
     width: 100%;
     height: 100vh;
+    z-index: 1;
+
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+#nav-bar {
     position: fixed;
-    width: 100%;
-    z-index: 1000;
+    right: 0;
+    top: 0;
+    padding-top: 2%;
+    padding-right: 2%;
+    z-index: 10;
 }
 
+.nav-menu {
+    /* Alternative of backdrop-filter */
+    background: hsla(0, 0%, 100%, .3);
+    overflow: hidden;
+    position: fixed;
+    right: -120%;
+    top: -20px;
+    padding-top: 15%;
+    opacity: 0.;
+    width: 15%;
+    height: 110%;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    padding-left: 0px;
+}
+
+/* Alternative of backdrop-filter */
+.nav-menu::before {
+    content: '';
+    filter: blur(1.5rem);
+    z-index: -1;
+}
+
+.nav-menu.active {
+    right: 0;
+}
+
+.nav-item {
+    margin: 2.5rem 0;
+}
+
+.nav-item:hover > a {
+    transform: scale(1.1);
+    text-decoration: none;
+}
+
+.nav-link{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #5c6063;
+    text-decoration: none;
+}
+    
 .hamburger {
-    display: none;
+    display: block;
+    cursor: pointer;
+    color: #fff;
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    -webkit-transform: translateY(8px) rotate(45deg);
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-8px) rotate(-45deg);
 }
 
 .bar {
@@ -55,90 +119,8 @@ a {
     background-color: #101010;
 }
 
-.nav-menu {
-    display: flex;
-    padding-right: 5%;
-}
-
-.nav-item {
-    margin-left: 5rem;
-}
-
-.nav-item > a {
-    color: #565555;
-    transition: .4s;
-}
-
-.nav-item:hover > a {
-    transform: scale(1.1);
-    text-decoration: none;
-}
-
-.nav-link{
-    font-size: 1.6rem;
-    font-weight: 400;
-    color: #475569;
-    text-decoration: none;
-}
-
-.nav-logo {
-    display: flex;
-    justify-content: flex-start;
-    font-size: 1.5rem;
-    color: #565555;
-    padding-left: 2%;
-}
-
-/* HOME PICTURE
--------------------------------------------------- */
-.name-container {
-    position: absolute;
-    left: 13%;
-    top: 42%;
-    transform: translate(-13%, -42%);
-}
-
-.presentation-text {
-    font-weight: bold;
-    letter-spacing: 1px;
-    color: #fff;
-    font-size: 60px;
-    text-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
-}
-
-.download-button-container {
-    display: flex;
-    justify-content: center;
-    padding: 8%;
-}
-
-.download-button {
-    text-decoration: none;
-    padding: 30px;
-    font-size: 20px;
-    letter-spacing: 2px;
-    color: #475569;
-    border: 2px #f1e4d8 solid;
-    text-transform: uppercase;
-    cursor: pointer;
-    border-radius: 50px;
-}
-
-.download-button:hover {
-    opacity: 0.8;
-}
-
-
-
-
-
-
-
-
-
-/* Homepage 
-animation
------------------------*/
+/* HOMEPAGE OLD MOVIE ANIMATION
+=========================================== */
 .scene-section {
 	display:flex;
 	flex-direction:column;
@@ -176,7 +158,7 @@ animation
     position:absolute;
     top:0;
     width:100%; 
-    z-index:90;
+    z-index:15;
 }
 
 .screen__noise {
@@ -187,8 +169,9 @@ animation
     position:absolute;
     top:0;
     width:100%;
-    z-index:100;
+    z-index:16;
 }
+
 .screen__effects {
     height: 105%;
     margin-top:-20px;
@@ -347,12 +330,11 @@ animations adapted from Antoinette Janus'  Old Time Movie pen*/
 }
 
 /* Scroll down arrow
--------------------------*/
-
+============================*/
 .scroll-down {
     scroll-behavior: smooth;
-
 }
+
 .scroll-down {
     position: absolute;
     bottom: 10px;
@@ -370,7 +352,6 @@ animations adapted from Antoinette Janus'  Old Time Movie pen*/
     animation: bounce 2s infinite 2s;
     -webkit-transition: all .2s ease-in;
     transition: all .2s ease-in;
-
 }
 
 .scroll-down:before {
@@ -409,11 +390,15 @@ animations adapted from Antoinette Janus'  Old Time Movie pen*/
     }
 }
 
-
 /* ABOUT SECTION
--------------------------------------------------- */
+=========================================== */
 .about-section {
     background-image:url("../images/brown-background.jpg");
+}
+
+.section-container {
+    width: 60%;
+    margin: auto;
 }
 
 .picture-background {
@@ -428,36 +413,41 @@ animations adapted from Antoinette Janus'  Old Time Movie pen*/
 
 .description-text {
     font-size: 1.5rem;
-    width: 50%;
+    text-align: justify;
     padding: 1% 0;
     margin: auto;
-    text-align: justify;
+    /*width: 60%;*/
+    color: var(--primary-color);
 }
 
 .description-text span{
     font-weight: bold;
 }
 
-.description-projects {
-    font-size: 1.5rem;
-    letter-spacing: 2px;
-    width: 50%;
-    padding: 5% 0;
-    margin:auto;
-    text-align: justify;
+.download-button-container {
+    display: flex;
+    justify-content: center;
+    padding: 8%;
 }
 
-.description-projects p:nth-child(2) {
-    font-size: 1.2rem;
-    font-style: italic;
+.download-button {
+    text-decoration: none;
+    padding: 30px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #475569;
+    border: 2px #f1e4d8 solid;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.download-button:hover {
+    opacity: 0.6;
 }
 
 /* PROJECTS SECTION
--------------------------------------------------- */
-.projects-section {
-    background-image:url("../images/grey-background.jpg");
-}
-
+=========================================== */
 #my-projects-section{
     text-align: center;
     font-size: 40px;
@@ -472,16 +462,7 @@ animations adapted from Antoinette Janus'  Old Time Movie pen*/
     background-color: brown;
 }
 
-.section-scroll {
-    position: relative;
-    padding-bottom: 10%;
-    width: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-}
-
+/* Scrolling projects animation*/
 .section-scroll .reveal {
     position: relative;
     transform-origin: left;
@@ -509,28 +490,12 @@ animations adapted from Antoinette Janus'  Old Time Movie pen*/
     color: brown;
 }
 
+.reveal-hr {
+    margin-bottom: 1.2rem;
+}
+
 .section-scroll .reveal.active {
     transform: scaleX(1);
-}
-
-.reveal-text {
-    font-size: 1.6rem;
-}
-
-.reveal-text span {
-    font-style: italic;
-}
-
-.section-scroll .reveal:nth-child(4) {
-    font-weight: 300;
-    font-size: 1.5em;
-    letter-spacing: 2px;
-    margin-top: 5px;
-    display: inline-block;
-}
-
-.section-scroll .reveal:nth-child(4):before {
-    background: #ffeb3b;
 }
 
 .section-scroll .reveal.active:before {
@@ -538,27 +503,27 @@ animations adapted from Antoinette Janus'  Old Time Movie pen*/
     transition-delay: 0.5s;
 }
 
-.grid-picture-container {
+.grid-double-projects-container {
     display: grid;
-    grid-template-columns: 400px 500px;
-    grid-gap: 50px;
+    grid-template-columns: 45% 45%;
+    grid-gap: 10%;
+    margin: auto;
+}
+
+.project-container {
+    display: block;
+    text-align: center;
+    margin-bottom: 150px;
 }
 
 .picture-size {
-    width: 400px;
-    height: 400px;
+    width: 18rem;
+    height: 18rem;
     border-radius: 200px;
     border: 2px solid white;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     margin: 20px 0 40px 10px;
-    opacity: 0;
     transition: 1.5s;
-    object-fit: cover;
-}
-
-.picture-size.active{
-    left: 0;
-    opacity: 1;
     object-fit: cover;
 }
 
@@ -566,22 +531,135 @@ animations adapted from Antoinette Janus'  Old Time Movie pen*/
     transform: scale(1.1);
 }
 
+/* button details projects */
 .btn-project {
     display: inline-block;
     padding: .75rem 1.25rem;
     border-radius: 10rem;
     color: #fff;
     background-color: #475569;
-    text-transform: uppercase;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-size: 1rem;
     letter-spacing: .15rem;
+    margin: 1.2rem 0.2rem;
+    cursor: pointer;
+}
+
+.btn-project:hover {
+    opacity: 0.6;
+}
+
+.btn-project-smartphone {
+    display: none;
+}
+
+/* Modal popup "Details project" */
+.modal {
+    position: fixed;
+    left: 50%;
+    width: 40%;
+    transform: translate(-50%, -50%);
+    transition: top 0.3s ease-in-out;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    z-index: 20;
+    color: var(--primary-color);
+    background-color: #fff;
+    /*  For scrolling long content modal */
+    max-height: calc(100vh - 20px);
+    overflow-y: auto;
+}
+
+/* location from the top */
+.modal.active {
+    top: 50%;
+}
+
+.close-modal {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.modal-header {
+    font-size: 2rem;
+    color: brown;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.modal-hr {
+    margin: 2rem 0;
+}
+
+.modal-body {
+    font-size: 1.2rem;;
+    padding: 2rem 2rem 0 2rem;
+}
+
+.modal-body p{
+    text-align: justify;
+}
+
+.modal-body span{
+    font-weight: bold;
+}
+
+.modal-content-text {
+    padding: 0 1.5rem;
+    text-align: initial;
+}
+
+.icon-pictures-container {
+    text-align: center;
+}
+
+.icon-picture {
+    width: 50px;
+    height: auto;
+    padding: 10px;
+}
+
+/* button in popup */
+.btn-popup-project {
+    display: inline-block;
+    padding: .75rem 1.25rem;
+    border-radius: 10rem;
+    color: #fff;
+    background-color: #475569;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 1rem;
+    letter-spacing: .15rem;
+    margin: 1.2rem 0.2rem;
+    cursor: pointer;
+}
+
+.btn-popup-project:hover {
+    opacity: 0.6;
+}
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#overlay.active {
+    display: block;
 }
 
 /* CONTACT SECTION
--------------------------------------------------- */
+=========================================== */
 .contact-section {
-    background-color: #000;
+    background-color: #475569;
 }
 
 #contact-title{
@@ -604,7 +682,7 @@ animations adapted from Antoinette Janus'  Old Time Movie pen*/
     justify-content: space-evenly;
     width: 50%;
     margin: auto;
-    padding: 5% 0;
+    padding: 2% 0;
 }
 
 .social-logo {
@@ -653,9 +731,9 @@ animations adapted from Antoinette Janus'  Old Time Movie pen*/
 }
 
 /* LEGAL NOTICE PAGE
--------------------------------------------------- */
+=========================================== */
 .legales-notices-section {
-    background-image:url("../images/grey-background.jpg");
+    background-image:url("../images/brown-background.jpg");
     padding-bottom: 2%;
 }
 
@@ -672,79 +750,33 @@ animations adapted from Antoinette Janus'  Old Time Movie pen*/
 }
 
 /* RESPONSIVE
--------------------------------------------------- */
+=========================================== */
 
-@media screen and (max-width: 768px) {
-    /* NAVBAR */
-    .navbar {
-        padding: 1rem 0rem;
+@media screen and (max-width: 1100px) {
+    .section-container {
+        width: 80%;
     }
 
-    .nav-menu {
-        position: fixed;
-        right: -120%;
-        top: 2.5rem;
-        flex-direction: column;
-        background-color:#e6e3e3;
-        width: 100%;
-        border-radius: 10px;
-        text-align: center;
-        transition: 0.3s;
-        box-shadow:
-        0 10px 27px rgba(0, 0, 0, 0.05);
-        padding-left: 0px;
-    }
-
-    .nav-menu.active {
-        right: 0;
-    }
-
-    .nav-item {
-        margin: 2.5rem 0;
-    }
-
-    .hamburger {
-        display: block;
-        cursor: pointer;
-        padding-right: 5%;
-        color: #fff;
-    }
-
-    .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .hamburger.active .bar:nth-child(1) {
-        -webkit-transform: translateY(8px) rotate(45deg);
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    .hamburger.active .bar:nth-child(3) {
-        -webkit-transform: translateY(-8px) rotate(-45deg);
-        transform: translateY(-8px) rotate(-45deg);
-    }
-
-    /* NAV SECTION */
     .nav-section {
         width: 100%;
         height: 100vh;
-
     }
 
-    .container-nav {
-        background-color: transparent;
+    .nav-menu {
+        width: 40%;
+        padding-top: 30%;
     }
 
-    .nav-links {
-        background-color: #fff;
+    #nav-bar {
+        padding-top: 5%;
+        padding-right: 5%;
     }
 
-    .presentation-text {
-        font-size: 50px;
+    .nav-link {
+        font-size: 1.2rem;
     }
 
-    /* ANIMATION
-    Customize text */
+    /* Animation customize text */
     .scene__text {
         font-size: 25px;
     }
@@ -765,9 +797,7 @@ animations adapted from Antoinette Janus'  Old Time Movie pen*/
     }
 
     .description-text {
-        width: 85%;
         font-size: 1.2rem;
-        padding: 5% 0;
     }
 
     .download-button {
@@ -784,42 +814,37 @@ animations adapted from Antoinette Janus'  Old Time Movie pen*/
         width: 40%;
     }
 
-    .description-projects {
-        width: 80%;
-        font-size: 1.2rem;
+     /* Modal pop up */
+    .modal {
+        top: -100%;
+        width: 90%;
     }
 
-    .description-projects p:nth-child(2) {
+    /* location of the modal on the screen from the top */
+    .modal.active {
+        top: 50%;
+    }
+
+    .modal-content-title {
+        font-size: 2rem; 
+    }
+
+    .modal-body {
         font-size: 1rem;
+        padding: 1.2rem 1.2rem 0 1.2rem;;
     }
 
-    .section-scroll {
-        padding-bottom: 40%;
-    }
 
+}
+
+@media screen and (max-width: 768px) {
+    /* PROJECT SECTION */
     .picture-size {
-        width: 250px;
-        height: 250px;
-        border-radius: 125px;
-        left: -100px;
-        border: 2px solid white;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-        margin: 20px 0;
-        opacity: 0;
-        transition: 1.5s;
-        object-fit: cover;
-    }
+        width: 12rem;
+        height: 12rem;
+    }  
 
-    .reveal-text {
-        font-size: 1.2rem;
-    }
-
-    .section-scroll .reveal:nth-child(4) {
-        font-weight: 300;
-        font-size: 1.2em;
-        letter-spacing: 2px;
-        }
-
+    /* CONTACT SECTION */
     #contact-title {
         font-size: 20px;
     }
@@ -828,7 +853,7 @@ animations adapted from Antoinette Janus'  Old Time Movie pen*/
         display: flex;
         justify-content: space-evenly;
         width: 90%;
-        padding: 15% 0;
+        padding: 5% 0;
     }
 
     .social-logo {
@@ -841,7 +866,7 @@ animations adapted from Antoinette Janus'  Old Time Movie pen*/
     }
 
     .second-contact-hr {
-        margin-top: 20%;
+        margin-top: 10%;
     }
 
     .legales-notices-div {
@@ -850,14 +875,38 @@ animations adapted from Antoinette Janus'  Old Time Movie pen*/
     }
 }
 
-@media screen and (max-width: 1024px) {
-    .grid-picture-container {
-        display: flex;
-        flex-direction: column;
-        grid-gap: 0;
+@media screen and (max-width: 600px) {
+    .picture-size {
+        width: 8rem;
+        height: 8rem;
     }
 
-    .grid-picture-container ul{
-        padding-inline-start: 0px;
+    .btn-project {
+        display: none;
+    }
+
+    .btn-project-smartphone {
+        display: inline-block;
+        padding: .75rem 1.25rem;
+        border-radius: 10rem;
+        color: #fff;
+        background-color: #475569;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-size: 1rem;
+        letter-spacing: .15rem;
+        margin: 1.2rem 0.2rem;
+        cursor: pointer;
+    }
+
+    .btn-project-smartphone:hover {
+        opacity: 0.6;
+    }
+
+    .description-text {
+        padding: 3% 0;
+    }
+
+    .reveal-title {
+        font-size: 1.5rem;
     }
 }

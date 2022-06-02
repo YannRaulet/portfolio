@@ -9,11 +9,13 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header">     
         <section class="nav-section">
-            <nav class="navbar">
-                <a href="#" class="nav-logo">YR</a>
+            <nav id="nav-bar">
                 <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Accueil</a>
+                    </li>
                     <li class="nav-item">
                         <a href="#my-projects-section" class="nav-link">Mes projets</a>
                     </li>
@@ -28,7 +30,7 @@
                 </div>
             </nav>
         </section>
-
+        
         <section class="scene-section">
             <div class="feature">
                 <div class="screen" id="screen">
@@ -80,134 +82,378 @@
         </section>
     </header>
 
-    <section class="about-section">
-        <p class="picture-background"></p>
-        <p class="description-text">Je m'appelle Yann Raulet et j'ai commencé ma nouvelle vie en septembre 2020 après une expérience enrichissante tant sur le plan humain que professionnel
-            dans le domaine du commerce. Après une période de réflexion, j'ai suivi une formation de développeur web / web mobile ( PHP / Symfony) à la Wild Code School de Tours.</p>
-        <p class="description-text"> La formation n'a pas été de tout repos, mais découvrir et apprendre ont toujours été de véritables moteurs pour moi. S'en est suivie une
-            période de stage en binôme de 4 mois où nous avons réalisé en mis en ligne un site vitrine présentant une collection d'anciens maillots de vélo d'un particulier.
-            Mon périple m'a par la suite mené vers la réalisation d'un site de vente en ligne factice de mon côté.
-        </p>
-        <p class="description-text"> 
-            Afin d'étoffer mes connaissances et mes capacité techniques, j'ai intégré une formation C / C++ à distance avec le centre AJC Formation entre décembre 2021 et mars 2022. "Père de nombreux langages", apprendre le langage C permet aussi de mieux comprendre ces langages. 
-        </p>
+    <main>
+        <section class="about-section">
+            <div class="section-container"> 
+                <p class="picture-background"></p>
+                <p class="description-text">Je m'appelle Yann Raulet et j'ai commencé ma nouvelle vie en septembre 2020 après une expérience enrichissante tant sur le plan humain que professionnel
+                    dans le domaine du commerce. Après une période de réflexion, j'ai suivi une formation de développeur web / web mobile ( PHP / Symfony) à la Wild Code School de Tours.</p>
+                <p class="description-text"> La formation n'a pas été de tout repos, mais découvrir et apprendre ont toujours été de véritables moteurs pour moi. S'en est suivie une
+                    période de stage en binôme de 4 mois où nous avons réalisé et mis en ligne un site vitrine présentant une collection d'anciens maillots de vélo d'un particulier.
+                    Mon périple m'a par la suite mené vers la réalisation d'un site de vente en ligne factice de mon côté.
+                </p>
+                <p class="description-text"> 
+                    Afin d'étoffer mes connaissances et mes capacité techniques, j'ai intégré une formation C / C++ à distance avec le centre AJC Formation entre décembre 2021 et mars 2022. "Père de nombreux langages", apprendre le langage C permet aussi de mieux comprendre ces langages. 
+                </p>
 
-        <p class="description-text">En dehors de mon apprentissage dans le domaine du développemet web, j'aime le cinéma, la musique, la littérature et le sport, cela a construit celui que je suis aujourd'hui et nourrit ma curiosité chaque jour passant.
-            <br>Comme le dit si bien Georges Abitbol : "Le train de tes injures roule sur les rails de mon indifférence !". Cela ne veut rien dire ici, mais j'aime bien cette expression.
-        </p>
+                <p class="description-text">En dehors de mon apprentissage dans le domaine du développemet web, j'aime le cinéma, la musique, la littérature et le sport, cela a construit celui que je suis aujourd'hui et nourrit ma curiosité chaque jour passant.
+                    <br>Comme le dit si bien Georges Abitbol : "Le train de tes injures roule sur les rails de mon indifférence !". Cela ne veut rien dire ici, mais j'aime bien cette expression.
+                </p>
 
-        <div class="download-button-container">
-            <a href="https://oh9hlarqzw.preview.infomaniak.website/cv-yann-raulet.pdf" target="_blank"><button class="download-button">Télécharger mon CV</button></a>             
-        </div>
-    </section>
-
-    <section class="projects-section">
-        <article>
-            <h2 id="my-projects-section">Mes projets</h2>
-            <hr class="my-projects-section-hr">
-            <div class="description-projects">
-                <p>Vous retrouverez dans cette section plusieurs projets sur lesquels j'ai été amené à travailler.
-                <p>Les icônes utilisées sont issues du site <a href="https://www.flaticon.com/fr/" title="Flaticon">flaticon.com</a> (conçues par <a href="https://www.flaticon.com/fr/auteurs/pixel-perfect" title="Pixel perfect">Pixel perfect</a>
-                et <a href="https://www.freepik.com" title="Freepik">Freepik)</a> et sur <a href="https://icons8.com/">Icons8.fr</a></p>
-            </div>
-        </article>
-
-        <article class="section-scroll">
-            <div class="grid-picture-container">
-                <img class="picture-size" src="images/musictionary.png" alt="lien site musictionary">
-                <div>
-                    <h3 class="reveal reveal-title">Projet 1 : Musictionary</h3>
-                    <hr class="reveal reveal-hr">
-                    <p class="reveal reveal-text">MUSICTIONARY est un dictionnaire qui retrace les grands genres musicaux ainsi que des sous genres classés en catégories.
-                    <p class="reveal reveal-text"><span>Plusieurs catégories musicales pourront être ajoutées par la suite afin d’étoffer d’avantage le site.</span></p>
-                    <p class="reveal reveal-text">
-                        <img class="icon-picture" src="images/html.png" alt="icône html"><img class="icon-picture" src="images/css.png" alt="icône css"><img class="icon-picture" src="images/js.png" alt="icône js">
-                        <img class="icon-picture" src="images/php.png" alt="icône php">
-                    </p>
-                    <a href="http://oh9hlanojv.preview.infomaniak.website" class="reveal reveal-text btn-project" target="_blank">Voir le projet</a>
+                <div class="download-button-container">
+                    <a href="https://oh9hlarqzw.preview.infomaniak.website/cv-yann-raulet.pdf" target="_blank"><button class="download-button">Télécharger mon CV</button></a>             
                 </div>
-            </div>
-        </article>
+            </div>     
+        </section>
 
-        <article class="section-scroll">
-            <div class="grid-picture-container">
-                <a href="https://www.loom.com/share/320a0683195a4710ae08e994447d49d4" target="_blank"><img class="picture-size" src="images/mybook.png" alt="lien site mybook">
-                </a>
-                <div>
-                    <h3 class="reveal reveal-title">Projet 2 : Mybook</h3>
-                    <hr class="reveal reveal-hr">   
-                    <p class="reveal reveal-text">My books est un site permettant d'afficher et de gérer sa bibliothèque, par 
-                        l'ajout, la suppression, la modification des informations sur les livres.
-                        <br>La possibilité de rechercher par titre / auteur / genre / date de parution ...
-                    </p>
-                    <p class="reveal reveal-text"><span>Première utilisation de Composer et de Twig.</span></p>
-                    <p class="reveal reveal-text">
-                        <img class="icon-picture" src="images/html.png" alt="icône html"><img class="icon-picture" src="images/css.png" alt="icône css"><img class="icon-picture" src="images/composer.png" alt="icône composer">
-                        <img class="icon-picture" src="images/php.png" alt="icône php"><img class="icon-picture" src="images/mysql.png" alt="icône mysql">
-                    </p>
-                    <a href="https://www.loom.com/share/320a0683195a4710ae08e994447d49d4" class="reveal reveal-text btn-project" target="_blank">Voir le projet <br> (vidéo)</a>
-                </div>
-            </div>
-        </article>
+        <section class="projects-section">
+            <div class="section-container"> 
 
-        <article class="section-scroll">
-            <div class="grid-picture-container">
-                <a href="https://www.loom.com/share/25420ab077be4b4d8a6a23597f6109ef" target="_blank"><img class="picture-size" src="images/mobilean.png" alt="lien site mobilean"></a>
-                <div>
-                    <h3 class="reveal reveal-title">Projet 3: Mobilean</h3>
-                    <hr class="reveal reveal-hr">
-                    <p class="reveal reveal-text">Mobilean propose des solutions de location clés en main au gaz naturel (GNV). 
-                        <br>Avec une flotte de véhicule particuliers ou utilitaires.
-                    <p class="reveal reveal-text"><span>Première utilisation du Framework Symfony en groupe.</span></p>
-                    <p class="reveal reveal-text">
-                        <img class="icon-picture" src="images/html.png" alt="icône html"><img class="icon-picture" src="images/css.png" alt="icône css"><img class="icon-picture" src="images/js.png" alt="icône js">
-                        <img class="icon-picture" src="images/symfony.png" alt="icône symfony"><img class="icon-picture" src="images/php.png" alt="icône php"><img class="icon-picture" src="images/mysql.png" alt="icône mysql">
-                    </p>
-                    <a href="https://www.loom.com/share/25420ab077be4b4d8a6a23597f6109ef" class="reveal reveal-text btn-project" target="_blank">Voir le projet <br> (vidéo)</a>
-                </div>
-            </div>
-        </article>
+                <article>
+                    <h2 id="my-projects-section">Mes projets</h2>
+                    <hr class="my-projects-section-hr">
+                    <div class="description-text">
+                        <p>Vous retrouverez dans cette section plusieurs projets sur lesquels j'ai travaillé, en groupe ou individuellement.
+                    </div>
+                </article>
 
-        <article class="section-scroll">
-            <div class="grid-picture-container">
-                <a href="https://retro-cycling.fr" target="_blank"><img class="picture-size" src="images/retrocycling.png" alt="lien site retro-cycling"></a>
-                
-                <div>
-                    <h3 class="reveal reveal-title">Retro-cycling.fr</h3>
-                    <hr class="reveal reveal-hr">
-                    <p class="reveal reveal-text">retro-cycling.fr est un site réalisé en binôme visant les passioné(e)s de cyclisme avant tout.
-                        Retro-cycling se concentre sur l'histoire du cyclisme, les maillots, les coureurs ...
-                        
-                    </p>
-                        <p class="reveal reveal-text"><span>Utilisation de l'API Leaflet.</span></p>
-                    <p class="reveal reveal-text">
-                        <img class="icon-picture" src="images/html.png" alt="icône html"><img class="icon-picture" src="images/css.png" alt="icône css"><img class="icon-picture" src="images/js.png" alt="icône js">
-                        <img class="icon-picture" src="images/php.png" alt="icône php"><img class="icon-picture" src="images/symfony.png" alt="icône symfony"><img class="icon-picture" src="images/mysql.png" alt="icône mysql">
-                    </p>
-                    <a href="https://retro-cycling.fr" class="reveal reveal-text btn-project" target="_blank">Voir le projet</a>
-                </div>
+                <article class="section-scroll">
+                    <div id="overlay"></div>  <!-- For all the popup modals-->
+                    <div class="grid-double-projects-container">
+                        <div class="project-container">
+                            <a href="https://retro-cycling.fr" target="_blank"><img class="picture-size" src="images/retrocycling.png" alt="lien site retro-cycling"></a>              
+                            <div>
+                                <h3 class="reveal reveal-title">Retro-cycling</h3>
+                                <hr class="reveal reveal-hr">         
+                                <!-- the popup modal-->
+                                <button data-target="#modal8" class="reveal btn-project">Détails du projet</button><!--class reveal for the button animation-->
+                                <button data-target="#modal8" class="reveal btn-project-smartphone">Détails</button><!-- Only for smartphone-->
+                                <div class="modal" id="modal8">
+                                    <div class="modal-header">
+                                        <div class="modal-content-title">Retro-cycling</div>
+                                        <button class="btn close-modal">&times;</button><!--&time; : special character that matches x-->
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Retro-cycling est un site vitrine présentant une collection de maillots de vélo vintage 
+                                            visant les passioné(e)s de cyclisme. Ce site qui se concentre sur l'histoire du cyclisme, les maillots, les coureurs ...
+                                            <br>L'administrateur peut gérer dans le back-office : les maillots, les articles ...
+                                            <br><br><span>~<br>Projet réalisé en stage en bînome<br>~</span>
+                                        </p>
+                                        <hr class="modal-hr">
+                                        <ul class="modal-content-text">
+                                            <li>~ Conception graphique </li>
+                                            <li>~ Mise en place du déploiement continu <span>Github Actions</span> : GrumPHP, PHPStan, PHP_CS, PHPMD</li>
+                                            <li>~ Intégration <span> HTML / CSS / Bootstrap</span> </li>
+                                            <li>~ Développement sous <span>PHP / Symfony</span></li>
+                                            <li>~ Base de données <span>Sql</span></li>
+                                            <li>~ Animation des pages par <span>JavaScript</span></li>
+                                            <li>~ Site Responsive (compatible tous supports)</li>
+                                            <li>~ Référencement naturel SEO</li>                                   
+                                            <li>~ Utilisation de <span>l'API Leaflet</span> (cartographie en ligne)</li>
+                                            <li>~ Travail en méthode Agile (SCRUM)</li>
+                                            <li>~ Hébergement sur <span>Infomaniak</span></li>
+                                        </ul>
+                                        <hr class="modal-hr">
+                                        <div class="icon-pictures-container">
+                                            <img class="icon-picture" src="images/html.png" alt="icône html"><img class="icon-picture" src="images/css.png" alt="icône css"><img class="icon-picture" src="images/js.png" alt="icône js">
+                                            <img class="icon-picture" src="images/php.png" alt="icône php"><img class="icon-picture" src="images/symfony.png" alt="icône symfony"><img class="icon-picture" src="images/mysql.png" alt="icône mysql">
+                                        </div>
+                                    </div>
+                                    <a href="https://retro-cycling.fr" target="_blank"><button class="btn-popup-project">Visiter le site</button></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-container">
+                            <a href="https://oh9hlaqvaf.preview.infomaniak.website/" target="_blank"><img class="picture-size" src="images/labroudoute.png" alt="lien site labroudoute"></a>    
+                            <div>
+                                <h3 class="reveal reveal-title">La Broudoute</h3>
+                                <hr class="reveal reveal-hr">
+                                <button data-target="#modal7" class="reveal btn btn-project">Détails du projet</button>
+                                <button data-target="#modal7" class="reveal btn-project-smartphone">Détails</button><!-- Only for smartphone-->
+                                <div class="modal" id="modal7">
+                                    <div class="modal-header">
+                                        <div class="modal-content-title">La Broudoute</div>
+                                        <button class="btn close-modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>
+                                            La Broudoute est un site e-commerce. Il est possible pour l'utilisateur de commander des produits, de voir son panier, de voir ses achats passés ...
+                                            <br>L'administrateur peut gérer dans le back-office : les catégories, les images, les produits, les moyens de livraison ...
+                                            <br>Les produits étant fictifs, le numéro de carte bancaire à rentrer est le : 4242 4242 4242 4242.
+                                            <br><br><span>~<br>Projet personnel<br>~</span>
+                                        </p>
+                                        <hr class="modal-hr">
+                                        <ul class="modal-content-text">
+                                            <li>~ Conception graphique </li>
+                                            <li>~ Intégration <span> HTML / CSS / Bootstrap</span> </li>
+                                            <li>~ Développement sous <span>PHP / Symfony</span></li>
+                                            <li>~ Base de données <span>Sql</span></li>
+                                            <li>~ Animation des pages par <span>JavaScript</span></li>
+                                            <li>~ Utilisation de <span>EasyAdmin</span> pour la partie back-office</li>
+                                            <li>~ Site Responsive (compatible tous supports)</li>
+                                            <li>~ Utilisation de <span>l'API Stripe</span> (paiement en ligne)</li>
+                                            <li>~ Utilisation de <span>l'API Mailjet</span> (service d'envoi d'emails)</li>
+                                            <li>~ Hébergement sur <span>Infomaniak</span></li>
+                                        </ul>
+                                        <hr class="modal-hr">
+                                        <div class="icon-pictures-container">
+                                            <img class="icon-picture" src="images/html.png" alt="icône html"><img class="icon-picture" src="images/css.png" alt="icône css"><img class="icon-picture" src="images/js.png" alt="icône js">
+                                            <img class="icon-picture" src="images/php.png" alt="icône php"><img class="icon-picture" src="images/symfony.png" alt="icône symfony"><img class="icon-picture" src="images/mysql.png" alt="icône mysql">
+                                        </div>
+                                    </div>
+                                    <a href="https://oh9hlaqvaf.preview.infomaniak.website/" target="_blank"><button class="btn-popup-project">Visiter le site</button></a>
+                                </div>                    
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="section-scroll">
+                    <div class="grid-double-projects-container">
+                        <div class="project-container">
+                            <a href="https://oh9hlasviy.preview.infomaniak.website/" target="_blank"><img class="picture-size" src="images/zombies.png" alt="lien site zombies game"></a>           
+                            <div>
+                                <h3 class="reveal reveal-title">Mini-jeu : Zombies attack</h3>
+                                <hr class="reveal reveal-hr">
+                                <button data-target="#modal6" class="reveal btn btn-project">Détails du projet</button>
+                                <button data-target="#modal6" class="reveal btn-project-smartphone">Détails</button><!-- Only for smartphone-->
+                                <div class="modal" id="modal6">
+                                    <div class="modal-header">
+                                        <div class="modal-content-title">Mini-jeu : Zombies attack</div>
+                                        <button class="btn close-modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>
+                                            Ce mini jeu a pour but d'éliminer les zombies qui apparaissent sur l'écran, vous avez pour cela 60 tirs maximum.<br>
+                                            Si plus de 50 zombies apparaissent, vous perdez. Deux niveaux dez difficultés sont disponibles,facile et difficile, jouable sur PC et smartphone.
+                                            <br><br><span>~<br>Projet personnel<br>~</span>
+                                        </p>
+                                        <hr class="modal-hr">
+                                        <ul class="modal-content-text">
+                                            <li>~ Conception graphique </li>
+                                            <li>~ Intégration <span> HTML / CSS</span> </li>
+                                            <li>~ Animation par <span>JavaScript</span></li>
+                                            <li>~ Site Responsive (compatible tous supports)</li>
+                                            <li>~ Hébergement sur <span>Infomaniak</span></li>
+                                        </ul>
+                                        <hr class="modal-hr">
+                                        <div class="icon-pictures-container">
+                                            <img class="icon-picture" src="images/html.png" alt="icône html"><img class="icon-picture" src="images/css.png" alt="icône css"><img class="icon-picture" src="images/js.png" alt="icône js">
+                                        </div>
+                                    </div>
+                                    <a href="https://oh9hlasviy.preview.infomaniak.website/" target="_blank"><button class="btn-popup-project">Visiter le site</button></a>
+                                </div>        
+                            </div>
+                        </div>
+
+                        <div class="project-container">
+                            <a href="https://gitlab.com/YannRaulet/cicd-electronic-payment-system/-/tree/ProdServer/" target="_blank"><img class="picture-size" src="images/paymentTerminal.png" alt="lien site zombies game"></a>           
+                            <div>
+                                <h3 class="reveal reveal-title">Système de télépaiement</h3>
+                                <hr class="reveal reveal-hr">
+                                <button data-target="#modal5" class="reveal btn btn-project">Détails du projet</button>
+                                <button data-target="#modal5" class="reveal btn-project-smartphone">Détails</button><!-- Only for smartphone-->
+                                <div class="modal" id="modal5">
+                                    <div class="modal-header">
+                                        <div class="modal-content-title">Système de télépaiement</div>
+                                        <button class="btn close-modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>
+                                            Réalisation d'une simulation d'un terminal de paiement, et de son serveur de traitement par groupe de 4 : 
+                                            comprenant un terminal administrateur, un terminal client, et un terminal serveur.
+                                            <br> Il y a une interface graphique côté client et une côté administrateur.
+                                            <br>Un client envoi des requêtes de son terminal sur la base de données du serveur puis 
+                                            ces requêtes sont récupérées côté administrateur et client pour l'affichage des données.
+                                            <br> Le client peut : effectuer une transaction, consulter le solde de son compte.
+                                            <br> L'administrateur peut consulter : les paiements refusés, les paiements en attente de validation, la liste des clients
+                                            <br> Découverte de Docker et Jenkins.
+                                            <br><br><span>~<br>Projet de la formation "Développeur C / C++"<br>~</span><br>
+                                        </p>
+                                        <hr class="modal-hr">
+                                        <ul class="modal-content-text">
+                                            <li>~ Développement sous <span>C ++</span></li>
+                                            <li>~ Interface graphique <span> QT</span> </li>
+                                            <li>~ Mise en place du déploiement continu <span>Docker / Jenkins</span></li>
+                                        </ul>
+                                        <hr class="modal-hr">
+                                        <div class="icon-pictures-container">
+                                            <img class="icon-picture" src="images/cpp.png" alt="icône C++"><img class="icon-picture" src="images/qt.png" alt="icône qt"><img class="icon-picture" src="images/docker.png" alt="icône docker">
+                                            <img class="icon-picture" src="images/jenkins.png" alt="icône jenkins">
+                                        </div>
+                                    </div>
+                                    <a href="https://gitlab.com/YannRaulet/cicd-electronic-payment-system/-/tree/ProdServer/" target="_blank"><button class="btn-popup-project">Gitlab</button></a>
+                                </div>        
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="section-scroll">
+                    <div class="grid-double-projects-container">
+                        <div class="project-container">
+                            <a href="https://github.com/YannRaulet/Borne_arcade/tree/master/borne_arcade" target="_blank"><img class="picture-size" src="images/arcade.png" alt="lien arcade game"></a>           
+                            <div>
+                                <h3 class="reveal reveal-title">Borne d'arcade</h3>
+                                <hr class="reveal reveal-hr">
+                                <button data-target="#modal4" class="reveal btn btn-project">Détails du projet</button>
+                                <button data-target="#modal4" class="reveal btn-project-smartphone">Détails</button><!-- Only for smartphone-->
+                                <div class="modal" id="modal4">
+                                    <div class="modal-header">
+                                        <div class="modal-content-title">Borne d'arcade</div>
+                                        <button class="btn close-modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>
+                                            Réalisation d'une borne d'arcade simple en équipe de 3. Cette borne comprend 4 jeux : 
+                                            Pierre-Feuille-Ciseaux, Juste Prix, Mastermind et le Pendu. 
+                                            Il y un menu permettant de choisir un des 4 jeux.
+                                            <br><br><span>~<br>Projet de la formation "Développeur C / C++"<br>~</span><br>
+                                        </p>
+                                        <hr class="modal-hr">
+                                        <ul class="modal-content-text">
+                                            <li>~ Réalisé en<span> C</span> </li>
+                                        </ul>
+                                        <hr class="modal-hr">
+                                        <div class="icon-pictures-container">
+                                            <img class="icon-picture" src="images/c.png" alt="icône c">
+                                        </div>
+                                    </div>
+                                    <a href="https://oh9hlasviy.preview.infomaniak.website/" target="_blank"><button class="btn-popup-project">Github</button></a>
+                                </div>        
+                            </div>
+                        </div>
+
+                        <div class="project-container">
+                            <a href="https://www.loom.com/share/25420ab077be4b4d8a6a23597f6109ef" target="_blank"><img class="picture-size" src="images/mobilean.png" alt="lien site mobilean"></a>
+                            <div>
+                                <h3 class="reveal reveal-title">Mobilean</h3>
+                                <hr class="reveal reveal-hr">
+
+                                <button data-target="#modal3" class="reveal btn btn-project">Détails du projet</button>
+                                <button data-target="#modal3" class="reveal btn-project-smartphone">Détails</button><!-- Only for smartphone-->
+                                <div class="modal" id="modal3">
+                                    <div class="modal-header">
+                                        <div class="modal-content-title">Mobilean</div>
+                                        <button class="btn close-modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p class="modal-content-text">
+                                            Réalisation d'un site web en équipe pour une entreprise, celle-ci devait mettre en avant des
+                                            solutions de mobilité au bio-méthane gaz 100% renouvelable.
+                                            Mobilean proposait la vente et installation de bornes de recharge chez les particuliers
+                                            ou les professionnels ainsi que la location de véhicules roulant au GNV.<br><br>
+                                            <span>~<br>Troisième projet de la formation "Développeur web et web mobile"<br>~</span><br> 
+
+                                        </p>
+                                        <hr class="modal-hr">
+                                        <ul class="modal-content-text">
+                                            <li>~ Conception graphique </li>
+                                            <li>~ Intégration <span> HTML / CSS / Bootstrap</span> </li>
+                                            <li>~ Développement sous <span>PHP / Symfony</span></li>
+                                            <li>~ Base de données <span>Sql</span></li>
+                                            <li>~ Animation des pages par <span>JavaScript</span></li>
+                                            <li>~ Travail en méthode Agile (SCRUM)</li>
+                                        </ul>
+                                        <hr class="modal-hr">
+                                        <div class="icon-pictures-container">
+                                            <img class="icon-picture" src="images/html.png" alt="icône html"><img class="icon-picture" src="images/css.png" alt="icône css"><img class="icon-picture" src="images/js.png" alt="icône js">
+                                            <img class="icon-picture" src="images/php.png" alt="icône php"><img class="icon-picture" src="images/symfony.png" alt="icône symfony"><img class="icon-picture" src="images/mysql.png" alt="icône mysql">
+                                        </div>
+                                    </div>
+                                    <a href="https://www.loom.com/share/25420ab077be4b4d8a6a23597f6109ef" target="_blank"><button class="btn-popup-project">Vidéo du site</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="section-scroll">
+                    <div class="grid-double-projects-container">
+                        <div class="project-container">       
+                            <a href="https://www.loom.com/share/320a0683195a4710ae08e994447d49d4" target="_blank"><img class="picture-size" src="images/mybook.png" alt="lien site mybook">
+                            </a>
+                            <div>
+                                <h3 class="reveal reveal-title">Mybook</h3>
+                                <hr class="reveal reveal-hr">
+                                <button data-target="#modal2" class="reveal btn btn-project">Détails du projet</button>
+                                <button data-target="#modal2" class="reveal btn-project-smartphone">Détails</button><!-- Only for smartphone-->
+                                <div class="modal" id="modal2">
+                                    <div class="modal-header">
+                                        <div class="modal-content-title">Mybook</div>
+                                        <button class="btn close-modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p class="modal-content-text">
+                                            Réalisation d'un site en groupe permettant d'afficher et de gérer sa bibliothèque, par 
+                                            l'ajout, la suppression, la modification des informations sur les livres.
+                                            Il est possible de faire une recherche par titre / auteur / genre / date de parution ...
+                                            <br>Première utilisation de Composer et de Twig.
+                                            <br><br><span>~<br>Deuxième projet en équipe de la formation "Développeur web et web mobile"<br>~</span><br> 
+                                        </p>
+                                        <hr class="modal-hr">
+                                        <ul class="modal-content-text">
+                                            <li>~ Conception graphique </li>
+                                            <li>~ Intégration <span> HTML / CSS</span> </li>
+                                            <li>~ Développement sous <span>PHP</span></li>
+                                            <li>~ Utilisation de <span>Composer</span> et de <span>Twig</span></li>
+                                            <li>~ Base de données <span>Sql</span></li>
+                                            <li>~ Travail en méthode Agile (SCRUM)</li>
+                                        </ul>
+                                        <hr class="modal-hr">
+                                        <div class="icon-pictures-container">
+                                            <img class="icon-picture" src="images/html.png" alt="icône html"><img class="icon-picture" src="images/css.png" alt="icône css"><img class="icon-picture" src="images/composer.png" alt="icône composer">
+                                            <img class="icon-picture" src="images/php.png" alt="icône php"><img class="icon-picture" src="images/mysql.png" alt="icône mysql">
+                                        </div>
+                                    </div>
+                                    <a href="https://www.loom.com/share/320a0683195a4710ae08e994447d49d4" target="_blank"><button class="btn-popup-project">Vidéo du site</button></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-container">       
+                            <img class="picture-size" src="images/musictionary.png" alt="lien site musictionary">
+                            <div>
+                                <h3 class="reveal reveal-title">Musictionary</h3>
+                                <hr class="reveal reveal-hr">
+                                <button data-target="#modal1" class="reveal btn btn-project">Détails du projet</button>
+                                <button data-target="#modal1" class="reveal btn-project-smartphone">Détails</button><!-- Only for smartphone-->
+                                <div class="modal" id="modal1">
+                                    <div class="modal-header">
+                                        <div class="modal-content-title">Musictionary</div>
+                                        <button class="btn close-modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p class="modal-content-text"> 
+                                            Réalisation d’un annuaire musicale responsive en groupe qui présente les grands courants
+                                            musicaux actuels, en donnant un historique, des informations, une description et des
+                                            exemples pour chaque genre.<br>
+                                            Découverte de Github.
+                                            <br><br><span>~<br>Premier projet de la formation "Développeur web et web mobile"<br>~</span><br> 
+                                        </p>
+                                        <hr class="modal-hr">
+                                        <ul class="modal-content-text">
+                                            <li>~ Conception graphique </li>
+                                            <li>~ Intégration <span> HTML / CSS</span> </li>
+                                            <li>~ Développement sous <span>PHP</span></li>
+                                            <li>~ Animation des pages par <span>JavaScript</span></li>
+                                            <li>~ Hébergement sur <span>Infomaniak</span></li>
+                                        </ul>
+                                        <hr class="modal-hr">
+                                        <div class="icon-pictures-container">
+                                            <img class="icon-picture" src="images/html.png" alt="icône html"><img class="icon-picture" src="images/css.png" alt="icône css"><img class="icon-picture" src="images/js.png" alt="icône js">
+                                            <img class="icon-picture" src="images/php.png" alt="icône php">
+                                        </div>
+                                    </div>
+                                <a href="http://oh9hlanojv.preview.infomaniak.website" target="_blank"><button class="btn-popup-project">Visiter le site</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
             </div>
-        </article>
-        <article class="section-scroll">
-            <div class="grid-picture-container">
-                <a href="https://oh9hlaqvaf.preview.infomaniak.website/" target="_blank"><img class="picture-size" src="images/labroudoute.png" alt="lien site labroudoute"></a>
-                
-                <div>
-                    <h3 class="reveal reveal-title">La Broudoute</h3>
-                    <hr class="reveal reveal-hr">
-                    <p class="reveal reveal-text">La Broudoute est un (faux) site e-commerce. Il est possible pour l'utilisateur de commandes des produits, voir son panier, voir ses achats passés ...
-                        <br>Les produits étant fictifs, le numéro de carte bancaire à rentrer est le : 4242 4242 4242 4242.
-                    </p>
-                        <p class="reveal reveal-text"><span>Utilisation de l'API Stripe pour le paiement et de Mailjet : service d'envoi d'emails.</span></p>
-                    <p class="reveal reveal-text">
-                        <img class="icon-picture" src="images/html.png" alt="icône html"><img class="icon-picture" src="images/css.png" alt="icône css"><img class="icon-picture" src="images/js.png" alt="icône js">
-                        <img class="icon-picture" src="images/php.png" alt="icône php"><img class="icon-picture" src="images/symfony.png" alt="icône symfony"><img class="icon-picture" src="images/mysql.png" alt="icône mysql">
-                    </p>
-                    <a href="https://oh9hlaqvaf.preview.infomaniak.website/" class="reveal reveal-text btn-project" target="_blank">Voir le projet</a>
-                </div>
-            </div>
-        </article>
-    </section>
+        </section>
+    </main>
 
     <footer>
         <div class="contact-section">
@@ -231,153 +477,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
 
-    <script type="text/javascript">
-        // Projects animation
-        const reveal = gsap.utils.toArray('.reveal');
-        reveal.forEach((text, i) => {
-            ScrollTrigger.create({
-                trigger: text,
-                toggleClass: 'active',
-                start: "top 90%",
-                //end: "top 10%",
-            })
-        })
-
-        const images = gsap.utils.toArray('.picture-size, .hobbies-icons');
-        images.forEach((img, i) => {
-            ScrollTrigger.create({
-                trigger: img,
-                toggleClass: 'active',
-                start: "top 90%",
-                //end: "top 10%",
-            })
-        })
-    </script>
-
-    <script type="text/javascript">
-        // Responsive nav menu
-        const hamburger = document.querySelector(".hamburger");
-        const navMenu = document.querySelector(".nav-menu");
-        const navLink = document.querySelectorAll(".nav-link");
-
-        hamburger.addEventListener("click", mobileMenu);
-        navLink.forEach(n => n.addEventListener("click", closeMenu));
-
-        function mobileMenu() {
-            hamburger.classList.toggle("active");
-            navMenu.classList.toggle("active");
-        }
-
-        function closeMenu() {
-            hamburger.classList.remove("active");
-            navMenu.classList.remove("active");
-        }
-    </script>
-
-    <script type="text/javascript">
-        // SLIDESHOW
-        var sceneIndex = 0;
-        showScenes();
-
-        function showScenes() {
-            var i;
-            var scenes = document.getElementsByClassName("scene");
-            for (i = 0; i < scenes.length; i++) {
-                scenes[i].style.display = "none";
-            }
-            sceneIndex++;
-            if (sceneIndex > scenes.length) {
-                sceneIndex = 1
-            }
-            scenes[sceneIndex-1].style.display = "flex";
-            setTimeout(showScenes, 4000); // 
-        } 
-
-        // SNAP CRACKLE POP
-        // CANVAS NOISE SCRIPT
-        const noise = () => {
-            let canvas, ctx;
-            let wWidth, wHeight;
-            let noiseData = [];
-            let frame = 0;
-            let loopTimeout;
-
-            // create Noise
-            const createNoise = () => {
-                const idata = ctx.createImageData(wWidth, wHeight);
-                const buffer32 = new Uint32Array(idata.data.buffer);
-                const len = buffer32.length;
-
-                for (let i = 0; i < len; i++) {
-                    if (Math.random() < 0.5) {
-                        buffer32[i] = 0xff000000;
-                    }
-                }
-                noiseData.push(idata);
-            };
-
-            // play Noise
-            const paintNoise = () => {
-                if (frame === 9) {
-                    frame = 0;
-                } else {
-                    frame++;
-                }
-
-                ctx.putImageData(noiseData[frame], 0, 0);
-            };
-
-            // loop
-            const loop = () => {
-                paintNoise(frame);
-                loopTimeout = window.setTimeout(() => {
-                    window.requestAnimationFrame(loop);
-                }, (1000 / 25));
-            };
-
-            // setup
-            const setup = () => {
-                wWidth = window.innerWidth;
-                wHeight = window.innerHeight;
-
-                canvas.width = wWidth;
-                canvas.height = wHeight;
-
-                for (let i = 0; i < 10; i++) {
-                    createNoise();
-                }
-                loop();
-            };
-
-            // reset
-            let resizeThrottle;
-            const reset = () => {
-                window.addEventListener('resize', () => {
-                    window.clearTimeout(resizeThrottle);
-                    resizeThrottle = window.setTimeout(() => {
-                        window.clearTimeout(loopTimeout);
-                        setup();
-                    }, 200);
-                }, false);
-            };
-
-            // init
-            const init = (() => {
-                canvas = document.getElementById('noise');
-                ctx = canvas.getContext('2d');
-                setup();
-            })();
-        };
-        noise();
-
-    </script>
-
-    <script>
-        // animation arrow scroll down
-        function scrollWin() {
-            window.scrollBy(0, 750);
-        }
-
-    </script>
+    <script src="script.js" type="text/javascript" ></script>
 </body>
 </html>
