@@ -1,4 +1,3 @@
-
 /* RESPONSIVE NAV MENU
 =========================================== */
 
@@ -117,15 +116,6 @@ const noise = () => {
     })();
 };
 noise();
-
-
-/* HOMEPAGE ARROW SCROLL DOWN ANIMATION
-=========================================== */
-
-function scrollWin() {
-    window.scrollBy(0, 850);
-}
-
 
 /*  PROJECT SECTION
     PROJECTS SCROLLING ANIMATION

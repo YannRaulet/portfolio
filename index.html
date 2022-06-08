@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <link rel="icon" type="image/png" href="images/flavicon.png" />
-    <title>Yann Raulet</title>
+    <title>Yann Raulet - Développeur web</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Portfolio de Yann Raulet, développeur web PHP / Symfony">
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
 </head>
 
@@ -17,7 +18,10 @@
                         <a href="#" class="nav-link">Accueil</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#my-projects-section" class="nav-link">Mes projets</a>
+                        <a href="#about-section" class="nav-link">A propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects-section" class="nav-link">Mes projets</a>
                     </li>
                     <li class="nav-item">
                         <a href="#contact-title" class="nav-link">Me contacter</a>
@@ -34,27 +38,20 @@
         <section class="scene-section">
             <div class="feature">
                 <div class="screen" id="screen">
-                    <div class="scene " id="scene0">
-                        <div class="scene__content">
-                            <div class="scene__text">" Chère visiteuse, </div>
-                            <div class="scene__text">cher visiteur,</div>
-                            <div class="scene__text">bien le bonjour ! "</div>
-                        </div>
-                    </div>
                     <div class="scene " id="scene1">
                         <div class="scene__content">
                             <div class="scene__text">" Vous êtes sur</div>
-                            <div class="scene__text">le portfolio </div>
-                            <div class="scene__text">de Yann Raulet,</div>
-                            <div class="scene__text">développeur web. "</div>
+                            <div class="scene__text">le portfolio de</div>
+                            <h1 class="scene__text_h1">Yann Raulet</h1>
+                            <div class="scene__text">développeur web</div>
+                            <div class="scene__text">PHP / Symfony "</div>
                         </div>
                     </div>
                     <div class="scene " id="scene2">
                         <div class="scene__content">
-                            <div class="scene__text">" L'équipage est </div>
-                            <div class="scene__text">ravi de </div>
-                            <div class="scene__text">vous accueillir</div>
-                            <div class="scene__text">à bord. "</div>
+                            <div class="scene__text">" Je suis ravi</div>
+                            <div class="scene__text">de vous</div>
+                            <div class="scene__text">accueillir ici. "</div>
                         </div>				
                     </div>
                     <div class="scene " id="scene3">
@@ -77,57 +74,90 @@
                 </div>
             </div>
             <!--Scroll down arrow -->
-            <a href="#about-section" onclick="scrollWin()" class="scroll-down"></a>
-            
+            <a href="#about-section" id="scroll-down"><p>Continuer</p></a>
         </section>
     </header>
 
     <main>
-        <section class="about-section">
-            <div class="section-container"> 
-                <p class="picture-background"></p>
-                <p class="description-text">Je m'appelle Yann Raulet et j'ai commencé ma nouvelle vie en septembre 2020 après une expérience enrichissante tant sur le plan humain que professionnel
-                    dans le domaine du commerce. Après une période de réflexion, j'ai suivi une formation de développeur web / web mobile ( PHP / Symfony) à la Wild Code School de Tours.</p>
-                <p class="description-text"> La formation n'a pas été de tout repos, mais découvrir et apprendre ont toujours été de véritables moteurs pour moi. S'en est suivie une
-                    période de stage en binôme de 4 mois où nous avons réalisé et mis en ligne un site vitrine présentant une collection d'anciens maillots de vélo d'un particulier.
-                    Mon périple m'a par la suite mené vers la réalisation d'un site de vente en ligne factice de mon côté.
-                </p>
-                <p class="description-text"> 
-                    Afin d'étoffer mes connaissances et mes capacité techniques, j'ai intégré une formation C / C++ à distance avec le centre AJC Formation entre décembre 2021 et mars 2022. "Père de nombreux langages", apprendre le langage C permet aussi de mieux comprendre ces langages. 
-                </p>
-
-                <p class="description-text">En dehors de mon apprentissage dans le domaine du développemet web, j'aime le cinéma, la musique, la littérature et le sport, cela a construit celui que je suis aujourd'hui et nourrit ma curiosité chaque jour passant.
-                    <br>Comme le dit si bien Georges Abitbol : "Le train de tes injures roule sur les rails de mon indifférence !". Cela ne veut rien dire ici, mais j'aime bien cette expression.
-                </p>
-
-                <div class="download-button-container">
-                    <a href="https://oh9hlarqzw.preview.infomaniak.website/cv-yann-raulet.pdf" target="_blank"><button class="download-button">Télécharger mon CV</button></a>             
+        <section id="about-section">
+            <article class="about-container">
+                <div class="about-section-left">
+                    <div class="about-img">
+                      <!--Modify picture for responsive-->
+                    <img src="./images/photo.png" class="img" alt="image de présentation">
+                    <img src="./images/photo-small.png" class="resp-img" alt="image de présentation smartphone">
+                    </div>
                 </div>
-            </div>     
+                <div class="about-section-right">
+                    <h2 id="about-title" class="reveal">A propos de<span> moi</span></h2>
+                    <p>Je m'appelle Yann Raulet et j'ai commencé ma nouvelle vie en septembre 2020 après une expérience enrichissante dans le domaine du commerce. Après une période de réflexion, 
+                        j'ai suivi une formation de "Développeur web / web mobile" ( PHP / Symfony) à la Wild Code School de Tours.
+                        S'en est suivie une période de stage en binôme de 4 mois où nous avons réalisé et mis en ligne un site vitrine présentant une collection d'anciens maillots de vélo d'un particulier.
+                        Mon périple m'a par la suite mené vers la réalisation de projets personnels dont la réalisation d'un site de vente en ligne factice de mon côté.
+                    </p>
+                    <p>
+                        Découvrir et apprendre ont toujours été de véritables moteurs pour moi et afin d'étoffer mes connaissances et mes capacité techniques, j'ai intégré une formation "Développeur C / C++ " à distance avec le centre AJC Formation entre décembre 2021 et mars 2022. 
+                    </p>
+                    <p>En dehors de mon apprentissage dans le domaine du développemet web, j'aime le cinéma, la musique, la littérature et le sport, cela a construit celui que je suis aujourd'hui et nourrit ma curiosité chaque jour passant.
+                    <br><a href="https://oh9hlarqzw.preview.infomaniak.website/cv-yann-raulet.pdf" class="reveal btn-custom" target="_blank">Télécharger mon CV</a>             
+                </div> 
+            </article>     
         </section>
 
-        <section class="projects-section">
+        <section id="skills-section">
+            <h2 id="skills-title" class="reveal">Mes <span>Compétences</span></h2> 
+            <article>
+                <ul class="skills-ul">
+                    <li class="skills-subtitles"><span>Back-</span>end </li>
+                    <li class="skills-li"><img class="icon-picture" src="images/php.png" alt="icône php"><span>PHP</span></li>
+                    <li class="skills-li"><img class="icon-picture" src="images/symfony.png" alt="icône symfony"><span>Symfony</span></li>
+                    <li class="skills-li"><img class="icon-picture" src="images/mysql.png" alt="icône mysql"><span>MySql</span></li>
+                    <li class="skills-li"><img class="icon-picture" src="images/c.png" alt="icône c"><span>C (notions)</span></li>
+                    <li class="skills-li"><img class="icon-picture" src="images/cpp.png" alt="icône C++"><span>C ++ (notions)</span></li>
+                    <li class="skills-li"><img class="icon-picture" src="images/qt.png" alt="icône qt"><span>QT (notions)</span></li>
+                </ul>
+            </article>
+
+            <article>
+                <ul class="skills-ul">
+                    <li class="skills-subtitles">front<span>-end</span> </li>
+                    <li class="skills-li"><img class="icon-picture" src="images/html.png" alt="icône html"><span>HTML</span></li>
+                    <li class="skills-li"><img class="icon-picture" src="images/css.png" alt="icône css"><span>CSS</span></li>
+                    <li class="skills-li"><img class="icon-picture" src="images/bootstrap.png" alt="icône css"><span>Boostrap</span></li>
+                    <li class="skills-li"><img class="icon-picture" src="images/js.png" alt="icône js"><span>JavaScript</span></li>
+                </ul>
+            </article>
+
+            <article>
+                <ul class="skills-ul">
+                    <li class="skills-subtitles">Outils</li>
+                    <li class="skills-li"><img class="icon-picture" src="images/vscode.png" alt="icône vs code"><span>VS Code</span></li>
+                    <li class="skills-li"><img class="icon-picture" src="images/git.png" alt="icône css"><span>Git</span></li>
+                    <li class="skills-li"><img class="icon-picture" src="images/github.png" alt="icône css"><span>Github</span></li>
+                    <li class="skills-li"><img class="icon-picture" src="images/figma.png" alt="icône css"><span>Figma</span></li>
+                    <li class="skills-li"><img class="icon-picture" src="images/infomaniak.png" alt="icône css"><span>Infomaniak</span></li>
+                    <li class="skills-li"><img class="icon-picture" src="images/docker.png" alt="icône docker"><span>Docker <br>(notions)</span></li>
+                </div>
+            </article>            
+        </section> 
+
+        <section id="projects-section">
             <div class="section-container"> 
-
                 <article>
-                    <h2 id="my-projects-section">Mes projets</h2>
-                    <hr class="my-projects-section-hr">
-                    <div class="description-text">
-                        <p>Vous retrouverez dans cette section plusieurs projets sur lesquels j'ai travaillé, en groupe ou individuellement.
-                    </div>
+                    <h2 id="projects-title" class="reveal">Mes<span> projets</span></h2>
+                    <hr class="section-hr">
+                    <p class="presentation-projects">Vous retrouverez dans cette section plusieurs projets sur lesquels j'ai travaillé, en groupe ou individuellement.
                 </article>
-
-                <article class="section-scroll">
+                
+                <article id="grid-projects-container">
                     <div id="overlay"></div>  <!-- For all the popup modals-->
-                    <div class="grid-double-projects-container">
                         <div class="project-container">
                             <a href="https://retro-cycling.fr" target="_blank"><img class="picture-size" src="images/retrocycling.png" alt="lien site retro-cycling"></a>              
-                            <div>
+                            <div class="details-project-scroll">
                                 <h3 class="reveal reveal-title">Retro-cycling</h3>
                                 <hr class="reveal reveal-hr">         
                                 <!-- the popup modal-->
-                                <button data-target="#modal8" class="reveal btn-project">Détails du projet</button><!--class reveal for the button animation-->
-                                <button data-target="#modal8" class="reveal btn-project-smartphone">Détails</button><!-- Only for smartphone-->
+                                <p data-target="#modal8" class="reveal btn-custom" target="_blank">détails</p>             
                                 <div class="modal" id="modal8">
                                     <div class="modal-header">
                                         <div class="modal-content-title">Retro-cycling</div>
@@ -159,18 +189,17 @@
                                             <img class="icon-picture" src="images/php.png" alt="icône php"><img class="icon-picture" src="images/symfony.png" alt="icône symfony"><img class="icon-picture" src="images/mysql.png" alt="icône mysql">
                                         </div>
                                     </div>
-                                    <a href="https://retro-cycling.fr" target="_blank"><button class="btn-popup-project">Visiter le site</button></a>
+                                    <a href="https://retro-cycling.fr" target="_blank"><button class="btn-custom-projects">Visiter le site</button></a>
                                 </div>
                             </div>
                         </div>
 
                         <div class="project-container">
                             <a href="https://oh9hlaqvaf.preview.infomaniak.website/" target="_blank"><img class="picture-size" src="images/labroudoute.png" alt="lien site labroudoute"></a>    
-                            <div>
+                            <div class="details-project-scroll">
                                 <h3 class="reveal reveal-title">La Broudoute</h3>
                                 <hr class="reveal reveal-hr">
-                                <button data-target="#modal7" class="reveal btn btn-project">Détails du projet</button>
-                                <button data-target="#modal7" class="reveal btn-project-smartphone">Détails</button><!-- Only for smartphone-->
+                                <p data-target="#modal7" class="reveal btn-custom" target="_blank">détails</p>             
                                 <div class="modal" id="modal7">
                                     <div class="modal-header">
                                         <div class="modal-content-title">La Broudoute</div>
@@ -202,25 +231,20 @@
                                             <img class="icon-picture" src="images/php.png" alt="icône php"><img class="icon-picture" src="images/symfony.png" alt="icône symfony"><img class="icon-picture" src="images/mysql.png" alt="icône mysql">
                                         </div>
                                     </div>
-                                    <a href="https://oh9hlaqvaf.preview.infomaniak.website/" target="_blank"><button class="btn-popup-project">Visiter le site</button></a>
+                                    <a href="https://oh9hlaqvaf.preview.infomaniak.website/" target="_blank"><button class="btn-custom-projects">Visiter le site</button></a>
                                 </div>                    
                             </div>
                         </div>
-                    </div>
-                </article>
 
-                <article class="section-scroll">
-                    <div class="grid-double-projects-container">
                         <div class="project-container">
                             <a href="https://oh9hlasviy.preview.infomaniak.website/" target="_blank"><img class="picture-size" src="images/zombies.png" alt="lien site zombies game"></a>           
-                            <div>
-                                <h3 class="reveal reveal-title">Mini-jeu : Zombies attack</h3>
+                            <div class="details-project-scroll">
+                                <h3 class="reveal reveal-title">Zombies attack</h3>
                                 <hr class="reveal reveal-hr">
-                                <button data-target="#modal6" class="reveal btn btn-project">Détails du projet</button>
-                                <button data-target="#modal6" class="reveal btn-project-smartphone">Détails</button><!-- Only for smartphone-->
+                                <p data-target="#modal6" class="reveal btn-custom" target="_blank">détails</p>
                                 <div class="modal" id="modal6">
                                     <div class="modal-header">
-                                        <div class="modal-content-title">Mini-jeu : Zombies attack</div>
+                                        <div class="modal-content-title">Zombies attack</div>
                                         <button class="btn close-modal">&times;</button>
                                     </div>
                                     <div class="modal-body">
@@ -242,18 +266,18 @@
                                             <img class="icon-picture" src="images/html.png" alt="icône html"><img class="icon-picture" src="images/css.png" alt="icône css"><img class="icon-picture" src="images/js.png" alt="icône js">
                                         </div>
                                     </div>
-                                    <a href="https://oh9hlasviy.preview.infomaniak.website/" target="_blank"><button class="btn-popup-project">Visiter le site</button></a>
+                                    <a href="https://oh9hlasviy.preview.infomaniak.website/" target="_blank"><button class="btn-custom-projects">Visiter le site</button></a>
                                 </div>        
                             </div>
                         </div>
 
                         <div class="project-container">
                             <a href="https://gitlab.com/YannRaulet/cicd-electronic-payment-system/-/tree/ProdServer/" target="_blank"><img class="picture-size" src="images/paymentTerminal.png" alt="lien site zombies game"></a>           
-                            <div>
+                            <div class="details-project-scroll">
+
                                 <h3 class="reveal reveal-title">Système de télépaiement</h3>
                                 <hr class="reveal reveal-hr">
-                                <button data-target="#modal5" class="reveal btn btn-project">Détails du projet</button>
-                                <button data-target="#modal5" class="reveal btn-project-smartphone">Détails</button><!-- Only for smartphone-->
+                                <p data-target="#modal5" class="reveal btn-custom" target="_blank">détails</p>             
                                 <div class="modal" id="modal5">
                                     <div class="modal-header">
                                         <div class="modal-content-title">Système de télépaiement</div>
@@ -283,22 +307,18 @@
                                             <img class="icon-picture" src="images/jenkins.png" alt="icône jenkins">
                                         </div>
                                     </div>
-                                    <a href="https://gitlab.com/YannRaulet/cicd-electronic-payment-system/-/tree/ProdServer/" target="_blank"><button class="btn-popup-project">Gitlab</button></a>
+                                    <a href="https://gitlab.com/YannRaulet/cicd-electronic-payment-system/-/tree/ProdServer/" target="_blank"><button class="btn-custom-projects">Gitlab</button></a>
                                 </div>        
                             </div>
                         </div>
-                    </div>
-                </article>
-
-                <article class="section-scroll">
-                    <div class="grid-double-projects-container">
+                    
                         <div class="project-container">
                             <a href="https://github.com/YannRaulet/Borne_arcade/tree/master/borne_arcade" target="_blank"><img class="picture-size" src="images/arcade.png" alt="lien arcade game"></a>           
-                            <div>
+                            <div class="details-project-scroll">
+
                                 <h3 class="reveal reveal-title">Borne d'arcade</h3>
                                 <hr class="reveal reveal-hr">
-                                <button data-target="#modal4" class="reveal btn btn-project">Détails du projet</button>
-                                <button data-target="#modal4" class="reveal btn-project-smartphone">Détails</button><!-- Only for smartphone-->
+                                <p data-target="#modal4" class="reveal btn-custom" target="_blank">détails</p>
                                 <div class="modal" id="modal4">
                                     <div class="modal-header">
                                         <div class="modal-content-title">Borne d'arcade</div>
@@ -320,19 +340,18 @@
                                             <img class="icon-picture" src="images/c.png" alt="icône c">
                                         </div>
                                     </div>
-                                    <a href="https://oh9hlasviy.preview.infomaniak.website/" target="_blank"><button class="btn-popup-project">Github</button></a>
+                                    <a href="https://oh9hlasviy.preview.infomaniak.website/" target="_blank"><button class="btn-custom-projects">Github</button></a>
                                 </div>        
                             </div>
                         </div>
 
                         <div class="project-container">
                             <a href="https://www.loom.com/share/25420ab077be4b4d8a6a23597f6109ef" target="_blank"><img class="picture-size" src="images/mobilean.png" alt="lien site mobilean"></a>
-                            <div>
+                            <div class="details-project-scroll">
+
                                 <h3 class="reveal reveal-title">Mobilean</h3>
                                 <hr class="reveal reveal-hr">
-
-                                <button data-target="#modal3" class="reveal btn btn-project">Détails du projet</button>
-                                <button data-target="#modal3" class="reveal btn-project-smartphone">Détails</button><!-- Only for smartphone-->
+                                <p data-target="#modal3" class="reveal btn-custom" target="_blank">détails</p>             
                                 <div class="modal" id="modal3">
                                     <div class="modal-header">
                                         <div class="modal-content-title">Mobilean</div>
@@ -345,7 +364,6 @@
                                             Mobilean proposait la vente et installation de bornes de recharge chez les particuliers
                                             ou les professionnels ainsi que la location de véhicules roulant au GNV.<br><br>
                                             <span>~<br>Troisième projet de la formation "Développeur web et web mobile"<br>~</span><br> 
-
                                         </p>
                                         <hr class="modal-hr">
                                         <ul class="modal-content-text">
@@ -362,23 +380,18 @@
                                             <img class="icon-picture" src="images/php.png" alt="icône php"><img class="icon-picture" src="images/symfony.png" alt="icône symfony"><img class="icon-picture" src="images/mysql.png" alt="icône mysql">
                                         </div>
                                     </div>
-                                    <a href="https://www.loom.com/share/25420ab077be4b4d8a6a23597f6109ef" target="_blank"><button class="btn-popup-project">Vidéo du site</button></a>
+                                    <a href="https://www.loom.com/share/25420ab077be4b4d8a6a23597f6109ef" target="_blank"><button class="btn-custom-projects">Vidéo du site</button></a>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </article>
 
-                <article class="section-scroll">
-                    <div class="grid-double-projects-container">
                         <div class="project-container">       
                             <a href="https://www.loom.com/share/320a0683195a4710ae08e994447d49d4" target="_blank"><img class="picture-size" src="images/mybook.png" alt="lien site mybook">
                             </a>
-                            <div>
+                            <div class="details-project-scroll">
                                 <h3 class="reveal reveal-title">Mybook</h3>
                                 <hr class="reveal reveal-hr">
-                                <button data-target="#modal2" class="reveal btn btn-project">Détails du projet</button>
-                                <button data-target="#modal2" class="reveal btn-project-smartphone">Détails</button><!-- Only for smartphone-->
+                                <p data-target="#modal2" class="reveal btn-custom" target="_blank">détails</p>             
                                 <div class="modal" id="modal2">
                                     <div class="modal-header">
                                         <div class="modal-content-title">Mybook</div>
@@ -407,18 +420,17 @@
                                             <img class="icon-picture" src="images/php.png" alt="icône php"><img class="icon-picture" src="images/mysql.png" alt="icône mysql">
                                         </div>
                                     </div>
-                                    <a href="https://www.loom.com/share/320a0683195a4710ae08e994447d49d4" target="_blank"><button class="btn-popup-project">Vidéo du site</button></a>
+                                    <a href="https://www.loom.com/share/320a0683195a4710ae08e994447d49d4" target="_blank"><button class="btn-custom-projects">Vidéo du site</button></a>
                                 </div>
                             </div>
                         </div>
 
                         <div class="project-container">       
                             <img class="picture-size" src="images/musictionary.png" alt="lien site musictionary">
-                            <div>
+                            <div class="details-project-scroll">
                                 <h3 class="reveal reveal-title">Musictionary</h3>
                                 <hr class="reveal reveal-hr">
-                                <button data-target="#modal1" class="reveal btn btn-project">Détails du projet</button>
-                                <button data-target="#modal1" class="reveal btn-project-smartphone">Détails</button><!-- Only for smartphone-->
+                                <p data-target="#modal1" class="reveal btn-custom" target="_blank">détails</p>             
                                 <div class="modal" id="modal1">
                                     <div class="modal-header">
                                         <div class="modal-content-title">Musictionary</div>
@@ -446,10 +458,9 @@
                                             <img class="icon-picture" src="images/php.png" alt="icône php">
                                         </div>
                                     </div>
-                                <a href="http://oh9hlanojv.preview.infomaniak.website" target="_blank"><button class="btn-popup-project">Visiter le site</button></a>
+                                <a href="http://oh9hlanojv.preview.infomaniak.website" target="_blank"><button class="btn-custom-projects">Visiter le site</button></a>
                             </div>
                         </div>
-                    </div>
                 </article>
             </div>
         </section>
@@ -457,17 +468,17 @@
 
     <footer>
         <div class="contact-section">
-            <p id="contact-title">Vous souhaitez me contacter /<br> en savoir plus ?</p>
-            <hr class="contact-hr">
+            <h2 id="contact-title">Me<span> contacter</span></h2>
+            <hr class="section-hr">
             <div class="social-icons">
                 <a href="https://www.linkedin.com/in/yann-raulet37" target="_blank" title="Lien vers linkedin"><img class="social-logo" src="images/linkedin.png" alt="icône linkedin"></a>
-                <a href="https://github.com/YannRaulet" target="_blank" title="Lien vers github"><img class="social-logo" src="images/github.png" alt="icône github"></a>
+                <a href="https://github.com/YannRaulet" target="_blank" title="Lien vers github"><img class="social-logo" src="images/github-color.png" alt="icône github"></a>
             </div>
             <div class="mail-phone-contact">
                 <p>Mail : yann.raulet@hotmail.fr</p>
-                <p>Tél :06.43.41.54.90</p>
+                <p>Tél : 06.43.41.54.90</p>
             </div>
-            <hr class="second-contact-hr">
+            <hr class="section-hr">
             <p class="legale-notices-p"><a class="legale-notices-link" href="legales-notices.html" title="Lien vers les mentions légales">Mentions légales</a></p>
             <p class="copyright">Copyright by Yann Raulet</p>
         </div>
